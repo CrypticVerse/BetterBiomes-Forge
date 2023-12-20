@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "betterbiomes:item/tapped_maple_sap_bucket"
+  }
+}

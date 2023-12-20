@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "betterbiomes:maple_log"
+    },
+    {
+      "item": "betterbiomes:maple_log"
+    },
+    {
+      "item": "betterbiomes:maple_log"
+    },
+    {
+      "item": "betterbiomes:maple_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "betterbiomes:maple_wood"
+  }
+}

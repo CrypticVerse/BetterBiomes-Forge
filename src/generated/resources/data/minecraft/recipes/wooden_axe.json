@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "betterbiomes:maple_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " PP",
+    " SP",
+    " S "
+  ],
+  "result": {
+    "item": "minecraft:wooden_axe"
+  },
+  "show_notification": true
+}

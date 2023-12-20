@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "betterbiomes:maple_planks"
+    }
+  ],
+  "result": {
+    "item": "betterbiomes:maple_button"
+  }
+}

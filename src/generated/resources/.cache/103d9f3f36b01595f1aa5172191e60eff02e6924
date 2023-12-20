@@ -1,0 +1,5 @@
+// 1.20.1	2023-11-17T17:30:42.8002752	Registries
+143d1a4390452514365dc84bc7a9ae7f9023b1ac data/betterbiomes/forge/biome_modifier/add_tree_maple.json
+0a83dfbed414f2fd2f19b2880f99206272c994f8 data/betterbiomes/worldgen/biome/maple_forest.json
+bb2d919bcecdfdac9165119262cdc01699360d5e data/betterbiomes/worldgen/configured_feature/maple.json
+892b7c2080ba69a756b79cb08eebc8748ab5ddf4 data/betterbiomes/worldgen/placed_feature/maple_placed.json

@@ -1,0 +1,33 @@
+{
+  "creativetab.biome_group": "Better Biomes Group",
+
+  "block.betterbiomes.maple_syrup_boiler": "Maple Syrup Boiler",
+  "block.betterbiomes.maple_log": "Maple Log",
+  "block.betterbiomes.maple_wood": "Maple Wood",
+  "block.betterbiomes.stripped_maple_log": "Stripped Maple Log",
+  "block.betterbiomes.stripped_maple_wood": "Stripped Maple Wood",
+  "block.betterbiomes.maple_planks": "Maple Planks",
+  "block.betterbiomes.maple_leaves": "Maple Leaves",
+  "block.betterbiomes.maple_sapling": "Maple Sapling",
+  "block.betterbiomes.maple_sign": "Maple Sign",
+  "block.betterbiomes.maple_hanging_sign": "Maple Hanging Sign",
+  "block.betterbiomes.maple_stairs": "Maple Stairs",
+  "block.betterbiomes.maple_slab": "Maple Slab",
+  "block.betterbiomes.maple_button": "Maple Button",
+  "block.betterbiomes.maple_pressure_plate": "Maple Pressure Plate",
+  "block.betterbiomes.maple_fence": "Maple Fence",
+  "block.betterbiomes.maple_fence_gate": "Maple Fence Gate",
+  "block.betterbiomes.maple_wall": "Maple Wall",
+  "block.betterbiomes.maple_door": "Maple Door",
+  "block.betterbiomes.maple_trapdoor": "Maple Trapdoor",
+
+  "item.betterbiomes.maple_boat": "Maple Boat",
+  "item.betterbiomes.maple_chest_boat": "Maple Chest Boat",
+  "item.betterbiomes.maple_syrup_bottle": "Maple Syrup Bottle",
+  "item.betterbiomes.maple_syrup_bucket": "Maple Syrup Bucket",
+  "item.betterbiomes.tapped_maple_sap_bucket": "Tapped Maple Sap Bucket",
+  "item.betterbiomes.uncured_maple_syrup": "Uncured Maple Syrup",
+  "item.betterbiomes.tapped_bucket": "Tapped Bucket",
+
+  "entity.betterbiomes.mod_chest_boat": "Chest Boat"
+}

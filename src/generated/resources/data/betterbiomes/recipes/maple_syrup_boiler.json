@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "pattern": [
+    "IGI",
+    "III",
+    "ILI"
+  ],
+  "result": {
+    "item": "betterbiomes:maple_syrup_boiler"
+  },
+  "show_notification": true
+}

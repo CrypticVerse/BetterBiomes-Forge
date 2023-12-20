@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "betterbiomes:block/maple_planks"
+  }
+}
