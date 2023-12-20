@@ -48,6 +48,29 @@ public class BlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.FENCE_GATES)
                 .add(BetterBiomeBlocks.MAPLE_FENCE_GATE.get());
+        this.tag(BlockTags.WOODEN_TRAPDOORS)
+                .add(BetterBiomeBlocks.MAPLE_TRAPDOOR.get());
+        this.tag(BlockTags.WOODEN_DOORS)
+                .add(BetterBiomeBlocks.MAPLE_DOOR.get());
+        this.tag(BlockTags.WOODEN_STAIRS)
+                .add(BetterBiomeBlocks.MAPLE_STAIRS.get());
+        this.tag(BlockTags.WOODEN_SLABS)
+                .add(BetterBiomeBlocks.MAPLE_SLAB.get());
+        this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(BetterBiomeBlocks.MAPLE_PRESSURE_PLATE.get());
+        this.tag(BlockTags.WOODEN_BUTTONS)
+                .add(BetterBiomeBlocks.MAPLE_BUTTON.get());
+        this.tag(BlockTags.WOODEN_FENCES)
+                .add(BetterBiomeBlocks.MAPLE_FENCE.get())
+                .add(BetterBiomeBlocks.MAPLE_FENCE_GATE.get());
+        this.tag(BlockTags.STANDING_SIGNS)
+                .add(BetterBiomeBlocks.MAPLE_SIGN.get());
+        this.tag(BlockTags.WALL_SIGNS)
+                .add(BetterBiomeBlocks.MAPLE_WALL_SIGN.get());
+        this.tag(BlockTags.CEILING_HANGING_SIGNS)
+                .add(BetterBiomeBlocks.MAPLE_HANGING_SIGN.get());
+        this.tag(BlockTags.WALL_HANGING_SIGNS)
+                .add(BetterBiomeBlocks.MAPLE_WALL_HANGING_SIGN.get());
 
 
     }

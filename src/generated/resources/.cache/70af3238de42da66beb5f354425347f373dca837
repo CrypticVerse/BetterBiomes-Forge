@@ -1,8 +1,19 @@
-// 1.20.1	2023-11-08T18:43:01.732335	Block Tags
+// 1.20.1	2023-12-20T10:17:23.1337257	Block Tags
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/betterbiomes/tags/blocks/maple_logs.json
+45e7f9573f50622601f197bbdb76b1120d458ce4 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 b18e1620d40776a88c36a70eb3fbc3af6adc1d26 data/minecraft/tags/blocks/fences.json
 a0f0706a4338409caae31368a89b0f2df4097786 data/minecraft/tags/blocks/fence_gates.json
 09e3e245578d544dec59ea1fe9ad735ad3b09efc data/minecraft/tags/blocks/leaves.json
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs.json
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs_that_burn.json
 2982743d0f693b0960bfc9ed4c75a8a11d2097e0 data/minecraft/tags/blocks/planks.json
+2b840c820908ff63e2119652f2e29fd859cecc9a data/minecraft/tags/blocks/standing_signs.json
+da27e0d4cfc741d0a62efb81834a3159425546c4 data/minecraft/tags/blocks/wall_hanging_signs.json
+79814911ea7fa1bf6af7d366e427afb8e28375ca data/minecraft/tags/blocks/wall_signs.json
+6832cb8eb54308310789c45636607decd180e1d7 data/minecraft/tags/blocks/wooden_buttons.json
+12eea37453960b6ca0d5a3dd8d0c6c8dfd78b6df data/minecraft/tags/blocks/wooden_doors.json
+673204fc3265790f915b7457d25a43a90dc76178 data/minecraft/tags/blocks/wooden_fences.json
+ea22babdde5bb49059bcff639b36085bd5278f05 data/minecraft/tags/blocks/wooden_pressure_plates.json
+943953deb8bc2dda3c4faab108197575d6d68481 data/minecraft/tags/blocks/wooden_slabs.json
+3cb5fc83464089fd985001c91120c5b6be59b8df data/minecraft/tags/blocks/wooden_stairs.json
+3692a1a43ec3402ac98a28271e2d2577c5b27f61 data/minecraft/tags/blocks/wooden_trapdoors.json
