@@ -30,17 +30,21 @@ Better Biomes uses the normal Gradle project structure, and can be compiled by r
 To implement this mod, follow the steps below.
 
 ### Maven
-Add the maven for either Curse Maven or Modrinth's Maven.
+Add the maven repo for CrypticVerse's Resources.
 ```gradle
 repositories {
     maven { url = "https://raw.githubusercontent.com/CrpyticVerse/projectresources/master/maven" }
 }
 ```
 
-### Implementation for ForgeGradle
-For ForgeGradle, include the following for either Curse Maven or Modrinth's Maven. You only need one. For Fabric Loom, check out the BetterBiomes repo.
-```gradle
+### Implementation
 implementation fg.deobf("net.crypticverse.betterbiomes:BetterBiomes-Forge:${betterbiomes_version}-${mc_version}
+```
+
+### A quick note
+If you are using an implementation, you need to include yhr maven for other project resources.
+```gradle
+maven {url = "https://maven.blamejared.com"}
 ```
 
 #### Requirements
