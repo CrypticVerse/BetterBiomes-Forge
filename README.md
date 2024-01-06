@@ -38,6 +38,7 @@ repositories {
 ```
 
 ### Implementation
+```gradle
 implementation fg.deobf("net.crypticverse.betterbiomes:BetterBiomes-Forge:${betterbiomes_version}-${mc_version}
 ```
 
