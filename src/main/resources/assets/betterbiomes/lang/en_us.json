@@ -27,6 +27,12 @@
   "item.betterbiomes.maple_syrup_bucket": "Maple Syrup Bucket",
   "item.betterbiomes.tapped_maple_sap_bucket": "Tapped Maple Sap Bucket",
   "item.betterbiomes.uncured_maple_syrup": "Uncured Maple Syrup",
+  "item.betterbiomes.pancake": "Pancake",
+  "item.betterbiomes.pancake_stack": "Pancake Stack",
+  "item.betterbiomes.maple_pancake": "Maple Pancake",
+  "item.betterbiomes.maple_pancake_stack": "Maple Pancake Stack",
+  "item.betterbiomes.chocolate_pancake": "Chocolate Pancake",
+  "item.betterbiomes.chocolate_pancake_stack": "Chocolate Pancake Stack",
   "item.betterbiomes.tapped_bucket": "Tapped Bucket",
 
   "entity.betterbiomes.mod_chest_boat": "Chest Boat"

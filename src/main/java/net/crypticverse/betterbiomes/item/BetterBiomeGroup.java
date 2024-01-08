@@ -31,6 +31,12 @@ public class BetterBiomeGroup {
                         output.accept(BetterBiomeBlocks.MAPLE_FENCE_GATE.get());
                         output.accept(BetterBiomeBlocks.MAPLE_DOOR.get());
                         output.accept(BetterBiomeBlocks.MAPLE_TRAPDOOR.get());
+                        output.accept(BetterBiomeItems.PANCAKE.get());
+                        output.accept(BetterBiomeItems.PANCAKE_STACK.get());
+                        output.accept(BetterBiomeItems.MAPLE_PANCAKE.get());
+                        output.accept(BetterBiomeItems.MAPLE_PANCAKE_STACK.get());
+                        output.accept(BetterBiomeItems.CHOCOLATE_PANCAKE.get());
+                        output.accept(BetterBiomeItems.CHOCOLATE_PANCAKE_STACK.get());
                         output.accept(BetterBiomeItems.MAPLE_SYRUP_BOTTLE.get());
 
                     }).build());

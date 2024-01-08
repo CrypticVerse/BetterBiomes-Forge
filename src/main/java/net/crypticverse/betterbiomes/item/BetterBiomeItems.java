@@ -26,7 +26,7 @@ public class BetterBiomeItems {
             () -> new BetterBiomeBoatItem(true, BetterBiomeBoatEntity.Type.MAPLE, new Item.Properties()));
 
     public static final RegistryObject<Item> MAPLE_SYRUP_BOTTLE = ITEMS.register("maple_syrup_bottle",
-            () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.MAPLE_SYRUP_BOTTLE).craftRemainder(Items.GLASS_BOTTLE)));
+            () -> new Item(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)));
 
     public static final RegistryObject<Item> MAPLE_SYRUP_BUCKET = ITEMS.register("maple_syrup_bucket",
             () -> new BucketItem(BetterBiomeFluids.SOURCE_MAPLE_SYRUP, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -39,6 +39,14 @@ public class BetterBiomeItems {
 
     public static final RegistryObject<Item> TAPPED_BUCKET = ITEMS.register("tapped_bucket",
             () -> new ItemNameBlockItem(BetterBiomeBlocks.TAPPED_BUCKET.get(), new Item.Properties()));
+
+
+    public static final RegistryObject<Item> PANCAKE = ITEMS.register("pancake", () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.PANCAKE)));
+    public static final RegistryObject<Item> MAPLE_PANCAKE = ITEMS.register("maple_pancake",() -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.MAPLE_PANCAKE)));
+    public static final RegistryObject<Item> CHOCOLATE_PANCAKE = ITEMS.register("chocolate_pancake", () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.CHOCOLATE_PANCAKE)));
+    public static final RegistryObject<Item> PANCAKE_STACK = ITEMS.register("pancake_stack", () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.PANCAKE_STACK)));
+    public static final RegistryObject<Item> MAPLE_PANCAKE_STACK = ITEMS.register("maple_pancake_stack", () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.MAPLE_PANCAKE_STACK)));
+    public static final RegistryObject<Item> CHOCOLATE_PANCAKE_STACK = ITEMS.register("chocolate_pancake_stack", () -> new Item(new Item.Properties().food(BetterBiomeFoodProperties.CHOCOLATE_PANCAKE_STACK)));
 
 
     public static void register(IEventBus eventBus) {

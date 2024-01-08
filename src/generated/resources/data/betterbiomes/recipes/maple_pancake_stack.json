@@ -3,16 +3,16 @@
   "category": "misc",
   "key": {
     "P": {
-      "item": "betterbiomes:maple_planks"
+      "item": "betterbiomes:maple_pancake"
     }
   },
   "pattern": [
-    "P  ",
-    "P  "
+    "PPP",
+    "PPP",
+    "PPP"
   ],
   "result": {
-    "count": 4,
-    "item": "minecraft:stick"
+    "item": "betterbiomes:maple_pancake_stack"
   },
   "show_notification": true
 }

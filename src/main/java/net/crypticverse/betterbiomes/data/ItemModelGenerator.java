@@ -27,6 +27,12 @@ public class ItemModelGenerator extends ItemModelProvider {
         simpleItem(BetterBiomeItems.MAPLE_BOAT);
         simpleItem(BetterBiomeItems.MAPLE_SYRUP_BUCKET);
         simpleItem(BetterBiomeItems.UNCURED_MAPLE_SYRUP);
+        simpleItem(BetterBiomeItems.PANCAKE);
+        simpleItem(BetterBiomeItems.MAPLE_PANCAKE);
+        simpleItem(BetterBiomeItems.CHOCOLATE_PANCAKE);
+        simpleItem(BetterBiomeItems.PANCAKE_STACK);
+        simpleItem(BetterBiomeItems.MAPLE_PANCAKE_STACK);
+        simpleItem(BetterBiomeItems.CHOCOLATE_PANCAKE_STACK);
 
         buttonItem(BetterBiomeBlocks.MAPLE_BUTTON, BetterBiomeBlocks.MAPLE_PLANKS);
         fenceItem(BetterBiomeBlocks.MAPLE_FENCE, BetterBiomeBlocks.MAPLE_PLANKS);

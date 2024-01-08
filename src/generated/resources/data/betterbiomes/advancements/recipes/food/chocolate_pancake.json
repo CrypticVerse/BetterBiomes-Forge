@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_maple_planks": {
+    "has_cocoa_beans": {
       "conditions": {
         "items": [
           {
             "items": [
-              "betterbiomes:maple_planks"
+              "minecraft:cocoa_beans"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
+    "has_pancake": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stick"
+              "betterbiomes:pancake"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_sword"
+        "recipe": "betterbiomes:chocolate_pancake"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_maple_planks",
-      "has_stick",
+      "has_pancake",
+      "has_cocoa_beans",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_sword"
+      "betterbiomes:chocolate_pancake"
     ]
   },
   "sends_telemetry_event": false

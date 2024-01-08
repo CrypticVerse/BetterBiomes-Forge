@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_maple_planks": {
+    "has_pancake": {
       "conditions": {
         "items": [
           {
             "items": [
-              "betterbiomes:maple_planks"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_stick": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:stick"
+              "betterbiomes:pancake"
             ]
           }
         ]
@@ -27,21 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_hoe"
+        "recipe": "betterbiomes:pancake_stack"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_maple_planks",
-      "has_stick",
+      "has_pancake",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_hoe"
+      "betterbiomes:pancake_stack"
     ]
   },
   "sends_telemetry_event": false

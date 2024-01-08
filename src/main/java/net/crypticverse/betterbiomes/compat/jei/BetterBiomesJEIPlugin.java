@@ -1,4 +1,4 @@
-package net.crypticverse.betterbiomes.compat;
+package net.crypticverse.betterbiomes.compat.jei;
 
 import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;

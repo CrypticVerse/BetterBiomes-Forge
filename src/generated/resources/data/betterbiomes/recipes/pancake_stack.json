@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
     "P": {
-      "item": "betterbiomes:maple_planks"
+      "item": "betterbiomes:pancake"
     }
   },
   "pattern": [
-    "PP ",
-    "PP "
+    "PPP",
+    "PPP",
+    "PPP"
   ],
   "result": {
-    "item": "minecraft:crafting_table"
+    "item": "betterbiomes:pancake_stack"
   },
   "show_notification": true
 }

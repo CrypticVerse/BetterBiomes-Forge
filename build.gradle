@@ -1,8 +1,7 @@
 plugins {
-    id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'net.minecraftforge.gradle' version '6.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7-SNAPSHOT' apply true
     id 'com.modrinth.minotaur' version '2.+'
@@ -102,6 +101,9 @@ repositories {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
+    maven {
+        url = "https://raw.githubusercontent.com/CrypticVerse/projectresources/master/maven"
+    }
 }
 
 dependencies {
@@ -157,12 +159,13 @@ jar.finalizedBy('reobfJar')
 publishing {
     publications {
         mavenJava(MavenPublication) {
+            artifactId = "BetterBiomes-Forge"
             artifact jar
         }
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            url System.getenv("MAVEN_URL").toString()
         }
     }
 }
@@ -173,8 +176,8 @@ tasks.withType(JavaCompile).configureEach {
 modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "Qs2o8KiI"
-    versionNumber = "forge-0.1.3.2"
-    versionName = "Better Biomes Forge 0.1.3.2"
+    versionNumber = "forge-0.1.4.1"
+    versionName = "Better Biomes Forge 0.1.4.1"
     versionType = "beta"
     uploadFile = jar
     gameVersions = ["1.20.1"]
