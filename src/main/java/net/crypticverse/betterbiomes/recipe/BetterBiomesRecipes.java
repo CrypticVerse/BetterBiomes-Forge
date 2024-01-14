@@ -12,7 +12,7 @@ public class BetterBiomesRecipes {
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, BetterBiomes.MOD_ID);
 
     public static final RegistryObject<RecipeSerializer<MapleSyrupRecipe>> MAPLE_SYRUP_SERIALIZER =
-            SERIALIZERS.register("gem_polishing", () -> MapleSyrupRecipe.Serializer.INSTANCE);
+            SERIALIZERS.register("maple_syrup", () -> MapleSyrupRecipe.Serializer.INSTANCE);
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
