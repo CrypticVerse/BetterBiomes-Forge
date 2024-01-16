@@ -3,9 +3,20 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    {
-      "tag": "betterbiomes:maple_logs"
-    }
+    [
+      {
+        "item": "betterbiomes:maple_log"
+      },
+      {
+        "item": "betterbiomes:maple_wood"
+      },
+      {
+        "item": "betterbiomes:stripped_maple_log"
+      },
+      {
+        "item": "betterbiomes:stripped_maple_wood"
+      }
+    ]
   ],
   "result": {
     "count": 4,

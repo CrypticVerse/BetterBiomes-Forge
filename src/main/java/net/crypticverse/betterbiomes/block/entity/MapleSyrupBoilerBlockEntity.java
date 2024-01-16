@@ -142,6 +142,12 @@ public class MapleSyrupBoilerBlockEntity extends BlockEntity implements MenuProv
 
     private void craftItem() {
         Optional<MapleSyrupRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
+        this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasRecipe() {

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "betterbiomes:maple_boat"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    " C ",
+    " B "
+  ],
+  "result": {
+    "item": "betterbiomes:maple_chest_boat"
+  },
+  "show_notification": true
+}

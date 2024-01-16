@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_maple_log": {
+    "has_stripped_maple_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "betterbiomes:maple_log"
+              "betterbiomes:stripped_maple_log"
             ]
           }
         ]
@@ -15,21 +15,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "betterbiomes:maple_syrup_bottle"
+        "recipe": "betterbiomes:stripped_maple_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_maple_log",
+      "has_stripped_maple_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "betterbiomes:maple_syrup_bottle"
+      "betterbiomes:stripped_maple_wood"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

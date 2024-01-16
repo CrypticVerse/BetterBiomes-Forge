@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "L": {
-      "item": "betterbiomes:maple_log"
+      "item": "betterbiomes:stripped_maple_log"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "count": 3,
-    "item": "betterbiomes:maple_wood"
+    "item": "betterbiomes:stripped_maple_wood"
   },
   "show_notification": true
 }

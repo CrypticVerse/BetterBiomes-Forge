@@ -21,6 +21,7 @@ public class BetterBiomeGroup {
                         output.accept(BetterBiomeBlocks.MAPLE_WOOD.get());
                         output.accept(BetterBiomeBlocks.STRIPPED_MAPLE_LOG.get());
                         output.accept(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get());
+                        output.accept(BetterBiomeBlocks.MAPLE_PLANKS.get());
                         output.accept(BetterBiomeItems.MAPLE_BOAT.get());
                         output.accept(BetterBiomeItems.MAPLE_CHEST_BOAT.get());
                         output.accept(BetterBiomeBlocks.MAPLE_STAIRS.get());
