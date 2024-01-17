@@ -1,7 +1,5 @@
-  name: Publish Mod
   on:
-    workflow_dispatch
-
+    [push, pull_request]
   jobs:
     build:
       runs-on: ubuntu-latest
@@ -14,9 +12,11 @@
             distribution: temurin
             java-version: 17
 
-        - name: Build and Publish
-          run: ./gradlew clean build publishMod --stacktrace
+        - name: Setup Gradle
+          uses: gradle/gradle-build-action@v2.4.2
+
+        - name: Build
+          run: ./gradlew build
           env:
             MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
             CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
-            MAVEN_URL: ${{ secrets.MAVEN_URL }}
