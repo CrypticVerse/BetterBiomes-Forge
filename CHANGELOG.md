@@ -1,7 +1,10 @@
-This version brings additions
+This version brings bug fixes
 
-### Additions
-- New pancakes! Craft 3 of them using 4 wheat, 1 sugar, 1 egg, and 1 milk bucket
-- Comes in Maple and Chocolate Variants!
-- New pancake stack, made with 9 pancakes
-- Also in Maple in Chocolate!
+### Fixes
+#### Forge
+- Fixed log recipes, can now be crafted into planks
+- The tapped bucket is now craftable
+- Maple forest is not biome.betterbiomes.maple_forest, now Maple Forest (Added translation)
+- Fixed boiler not making cured syrup, before was an infinite loop
+- Fixed JEI not showing boiler
+- Bump Version
