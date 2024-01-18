@@ -181,16 +181,11 @@ publishing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
-tasks.register("publishMod") {
-    dependsOn publish
-    dependsOn modrinth
-    dependsOn curseforge
-}
 modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "Qs2o8KiI"
     versionNumber = "forge-${mod_version}"
-    versionName = "Better Biomes Forge ${mod_version}"
+    versionName = "Better Biomes Forge ${mod_display_name}"
     versionType = "beta"
     uploadFile = jar
     gameVersions = ["1.20.1"]
@@ -204,7 +199,9 @@ curseforge {
         changelog = file("CHANGELOG.md")
         releaseType = 'beta'
         addGameVersion("1.20.1")
-        mainArtifact (jar)
+        mainArtifact (jar) {
+            displayName = "Better Biomes Forge ${mod_display_name}"
         }
+    }
 }
 

@@ -8,6 +8,9 @@ import net.crypticverse.betterbiomes.util.BetterBiomeWoodTypes;
 import net.crypticverse.betterbiomes.world.tree.MapleTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -48,7 +51,7 @@ public class BetterBiomeBlocks {
     public static final RegistryObject<Block> MAPLE_DOOR = registerBlock("maple_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion() ,BlockSetType.OAK));
     public static final RegistryObject<Block> MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
 
-    public static final RegistryObject<Block> TAPPED_BUCKET = registerBlock("tapped_bucket_block",
+    public static final RegistryObject<Block> TAPPED_BUCKET = registerWithoutBlockItem("tapped_bucket_block",
             () -> new TappedBucketBlock(BlockBehaviour.Properties.copy(Blocks.COCOA).noOcclusion().noCollission()));
 
     public static final RegistryObject<LiquidBlock> MAPLE_SYRUP_BLOCK = BLOCKS.register("maple_syrup_block",
@@ -58,6 +61,11 @@ public class BetterBiomeBlocks {
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerWithoutBlockItem(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
         return toReturn;
     }
 

@@ -5,7 +5,7 @@ showAsResourcePack=false
 
 [[mods]]
 modId="betterbiomes"
-version="0.1.4.2"
+version="0.1.4.3"
 displayName="Better Biomes"
 logoFile="logo.png"
 credits="MochaComa"
@@ -28,5 +28,5 @@ ordering="NONE"
 [[dependencies.betterbiomes]]
 modId="terrablender"
 mandatory=true
-versionRange="[3.0.0.169,)"
+versionRange="[3.0.1.2,)"
 ordering="NONE"
