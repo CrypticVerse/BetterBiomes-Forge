@@ -1,4 +1,4 @@
-// 1.20.1	2024-01-16T16:44:27.4706446	Recipes
+// 1.20.1	2024-01-18T14:31:38.4149869	Recipes
 d8209bf38921ca262b14a702b321040c60808075 data/betterbiomes/advancements/recipes/building_blocks/maple_door.json
 a24ef407be86416f10f60f284b8d70c1f408ab72 data/betterbiomes/advancements/recipes/building_blocks/maple_fence.json
 73671dc11b52ec3741c3517579478d1051cd6327 data/betterbiomes/advancements/recipes/building_blocks/maple_fence_gate.json
@@ -18,7 +18,7 @@ e065894b95b1c011a1c13320df2ef0939feb678f data/betterbiomes/advancements/recipes/
 7b85840ac7637f9b5fd6186641c6e6dcfee2e5a7 data/betterbiomes/advancements/recipes/food/pancake_stack.json
 70a1e8a4e3fb69bdd5ef6a1f89b764df207a8a3f data/betterbiomes/advancements/recipes/food/tapped_bucket.json
 e59d1059e694e17d6f71094f4f2f2347523141f5 data/betterbiomes/advancements/recipes/misc/maple_syrup_boiler.json
-03810a8731c5b34507123a666fa351fb7e994cf5 data/betterbiomes/advancements/recipes/misc/uncured_maple_syrup.json
+c3db9e708bcb28782db116da961408da6d1374b6 data/betterbiomes/advancements/recipes/misc/uncured_maple_syrup.json
 b170d9a8b25bf0a7cb97ed3fe81f5bab03f993fc data/betterbiomes/advancements/recipes/redstone/maple_button.json
 c04f2b305c9184909d0755d93e65dcf22b42cc35 data/betterbiomes/advancements/recipes/transportation/maple_boat.json
 1451572c1e008e92ac3dbfd5f6a3d4d6cc5fae92 data/betterbiomes/advancements/recipes/transportation/maple_chest_boat.json
@@ -44,4 +44,4 @@ b46713ccc062ae35c69da5fa3a0439a6cf15604c data/betterbiomes/recipes/maple_trapdoo
 68ceb2010457c02b78693d3ac9c6c284a0e96cff data/betterbiomes/recipes/pancake_stack.json
 a519d31f8e6bb30b8fd91dbad72bb99c1fcb101e data/betterbiomes/recipes/stripped_maple_wood.json
 668614e8e993d8f7f579dcb78e8013873aac4bfe data/betterbiomes/recipes/tapped_bucket.json
-33b2302673293efde13f29b33e5092ad407702fc data/betterbiomes/recipes/uncured_maple_syrup.json
+8c722467e958d046773a4202ba0671c4093c88cf data/betterbiomes/recipes/uncured_maple_syrup.json

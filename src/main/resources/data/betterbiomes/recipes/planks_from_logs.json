@@ -5,16 +5,7 @@
   "ingredients": [
     [
       {
-        "item": "betterbiomes:maple_log"
-      },
-      {
-        "item": "betterbiomes:maple_wood"
-      },
-      {
-        "item": "betterbiomes:stripped_maple_log"
-      },
-      {
-        "item": "betterbiomes:stripped_maple_wood"
+        "tag": "betterbiomes:maple_logs"
       }
     ]
   ],

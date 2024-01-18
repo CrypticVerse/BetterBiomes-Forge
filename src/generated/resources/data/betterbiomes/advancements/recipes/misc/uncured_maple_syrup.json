@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass": {
+    "has_glass_bottle": {
       "conditions": {
         "items": [
           {
@@ -34,7 +34,7 @@
   },
   "requirements": [
     [
-      "has_glass",
+      "has_glass_bottle",
       "has_tapped_maple_sap_bucket",
       "has_the_recipe"
     ]
