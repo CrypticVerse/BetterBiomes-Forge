@@ -15,7 +15,7 @@
             java-version: 17
 
         - name: Build and Publish
-          run: ./gradlew clean build modrinth curseforge publish --stacktrace
+          run: ./gradlew clean build modrinth curseforge --stacktrace
           env:
             MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
             CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
