@@ -200,6 +200,7 @@ tasks.register("publishMod") {
             changelog = file("CHANGELOG.md")
             releaseType = 'beta'
             addGameVersion("1.20.1")
+            addGameVersion "NeoForge"
             mainArtifact(jar) {
                 displayName = "Better Biomes Forge ${mod_display_name}"
             }
