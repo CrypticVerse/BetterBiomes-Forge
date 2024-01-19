@@ -30,6 +30,8 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(BetterBiomeBlocks.MAPLE_WOOD.get())
                 .add(BetterBiomeBlocks.STRIPPED_MAPLE_LOG.get())
                 .add(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(BetterBiomeBlocks.MAPLE_SYRUP_BOILER.get());
 
         this.tag(BlockTags.PLANKS)
                 .add(BetterBiomeBlocks.MAPLE_PLANKS.get());

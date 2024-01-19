@@ -37,12 +37,13 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
         this.add(BetterBiomeBlocks.MAPLE_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(BetterBiomeItems.MAPLE_HANGING_SIGN.get()));
 
-        this.dropSelf( BetterBiomeBlocks.MAPLE_STAIRS.get());
-        this.dropSelf( BetterBiomeBlocks.MAPLE_BUTTON.get());
-        this.dropSelf( BetterBiomeBlocks.MAPLE_PRESSURE_PLATE.get());
-        this.dropSelf( BetterBiomeBlocks.MAPLE_TRAPDOOR.get());
-        this.dropSelf( BetterBiomeBlocks.MAPLE_FENCE.get());
-        this.dropSelf( BetterBiomeBlocks.MAPLE_FENCE_GATE.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_STAIRS.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_BUTTON.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_PRESSURE_PLATE.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_TRAPDOOR.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_FENCE.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_FENCE_GATE.get());
+        this.dropSelf(BetterBiomeBlocks.MAPLE_SYRUP_BOILER.get());
 
         this.add( BetterBiomeBlocks.MAPLE_SLAB.get(),
                 block -> createSlabItemTable( BetterBiomeBlocks.MAPLE_SLAB.get()));
