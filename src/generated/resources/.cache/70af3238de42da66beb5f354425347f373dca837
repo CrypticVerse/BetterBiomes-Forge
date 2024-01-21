@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-20T10:17:23.1337257	Block Tags
+// 1.20.1	2024-01-21T11:47:12.183689	Block Tags
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/betterbiomes/tags/blocks/maple_logs.json
 45e7f9573f50622601f197bbdb76b1120d458ce4 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 b18e1620d40776a88c36a70eb3fbc3af6adc1d26 data/minecraft/tags/blocks/fences.json
@@ -6,6 +6,7 @@ a0f0706a4338409caae31368a89b0f2df4097786 data/minecraft/tags/blocks/fence_gates.
 09e3e245578d544dec59ea1fe9ad735ad3b09efc data/minecraft/tags/blocks/leaves.json
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs.json
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs_that_burn.json
+930670a6ddc5ca43d17fcc2af929bf539cedb1d4 data/minecraft/tags/blocks/mineable/pickaxe.json
 2982743d0f693b0960bfc9ed4c75a8a11d2097e0 data/minecraft/tags/blocks/planks.json
 2b840c820908ff63e2119652f2e29fd859cecc9a data/minecraft/tags/blocks/standing_signs.json
 da27e0d4cfc741d0a62efb81834a3159425546c4 data/minecraft/tags/blocks/wall_hanging_signs.json

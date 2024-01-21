@@ -181,28 +181,29 @@ publishing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
-    modrinth {
-        token = System.getenv("MODRINTH_TOKEN")
-        projectId = "Qs2o8KiI"
-        versionNumber = "forge-${mod_version}"
-        versionName = "Better Biomes Forge ${mod_display_name}"
-        versionType = "beta"
-        uploadFile = jar
-        gameVersions = ["1.20.1"]
-        loaders = ["forge", "neoforge"]
-        changelog = project.file("CHANGELOG.md").text
-    }
-    curseforge {
-        apiKey = System.getenv("CURSEFORGE_TOKEN")
-        project {
-            id = "938715"
-            changelog = file("CHANGELOG.md")
-            releaseType = 'beta'
-            addGameVersion("1.20.1")
-            addGameVersion "NeoForge"
-            mainArtifact(jar) {
-                displayName = "Better Biomes Forge ${mod_display_name}"
-            }
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "Qs2o8KiI"
+    versionNumber = "forge-${mod_version}"
+    versionName = "Better Biomes Forge ${mod_display_name}"
+    versionType = "beta"
+    uploadFile = jar
+    gameVersions = ["1.20.1"]
+    loaders = ["forge", "neoforge"]
+    changelog = project.file("CHANGELOG.md").text
+}
+curseforge {
+    apiKey = System.getenv("CURSEFORGE_TOKEN")
+    project {
+        id = "938715"
+        changelogType = "markdown"
+        changelog = file("CHANGELOG.md")
+        releaseType = 'beta'
+        addGameVersion ("1.20.1")
+        addGameVersion "NeoForge"
+        mainArtifact (jar) {
+            displayName = "Better Biomes Forge ${mod_display_name}"
         }
     }
+}
 
