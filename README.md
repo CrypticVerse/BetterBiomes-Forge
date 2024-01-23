@@ -46,6 +46,7 @@ implementation fg.deobf("net.crypticverse.betterbiomes:BetterBiomes-Forge:${bett
 If you are using an implementation, you need to include yhr maven for other project resources.
 ```gradle
 maven {url = "https://maven.blamejared.com"}
+maven {url = "https://maven.shedaniel.me"}
 ```
 
 #### Requirements
