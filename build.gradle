@@ -198,6 +198,7 @@ task curseforge(type: TaskPublishCurseForge) {
 
     def mainFile = upload(938715, jar)
     mainFile.releaseType = 'beta'
+    mainFile.displayName = "Better Biomes Forge ${mod_display_name}"
     mainFile.addGameVersion("1.20.4")
     mainFile.addModLoader("NeoForge")
     mainFile.addJavaVersion("Java 17")
