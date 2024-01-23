@@ -62,6 +62,7 @@ public class BetterBiomes
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+        LOGGER.info("Core registries loaded successfully");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

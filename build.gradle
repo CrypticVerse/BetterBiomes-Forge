@@ -1,3 +1,4 @@
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id 'idea'
     id 'maven-publish'
@@ -5,7 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7-SNAPSHOT' apply true
     id 'com.modrinth.minotaur' version '2.+'
-    id 'com.matthewprenger.cursegradle' version '1.4.0'
+    id 'net.darkhax.curseforgegradle' version '1.1.18'
 }
 
 version = mod_version
@@ -192,18 +193,19 @@ modrinth {
     loaders = ["forge", "neoforge"]
     changelog = project.file("CHANGELOG.md").text
 }
-curseforge {
-    apiKey = System.getenv("CURSEFORGE_TOKEN")
-    project {
-        id = "938715"
-        changelogType = "markdown"
-        changelog = file("CHANGELOG.md")
-        releaseType = 'beta'
-        addGameVersion ("1.20.1")
-        addGameVersion "NeoForge"
-        mainArtifact (jar) {
-            displayName = "Better Biomes Forge ${mod_display_name}"
-        }
-    }
-}
+task curseforge(type: TaskPublishCurseForge) {
+    apiToken = System.getenv("CURSEFORGE_TOKEN")
 
+    def mainFile = upload(938715, jar)
+    mainFile.releaseType = 'beta'
+    mainFile.addGameVersion("1.20.4")
+    mainFile.addModLoader("NeoForge")
+    mainFile.addJavaVersion("Java 17")
+    mainFile.changelog = project.file("CHANGELOG.md").text
+    mainFile.changelogType = 'markdown'
+    mainFile.addEmbedded("fabric-api")
+    mainFile.addEmbedded("terrablender-fabric")
+    mainFile.addOptional("jei")
+    mainFile.addOptional("roughly-enough-items")
+
+}
