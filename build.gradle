@@ -118,6 +118,8 @@ dependencies {
 
     implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${minecraft_version}-${terrablender_version}")
 
+    implementation fg.deobf("net.crypticverse:Notebook-api-forge-1.20.4:1.0")
+
 
     runtimeOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:12.0.684")
     compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:12.0.684")
@@ -206,6 +208,7 @@ task curseforge(type: TaskPublishCurseForge) {
     mainFile.changelogType = 'markdown'
     mainFile.addEmbedded("fabric-api")
     mainFile.addEmbedded("terrablender-fabric")
+    mainFile.addEmbedded("notebook-api")
     mainFile.addOptional("jei")
     mainFile.addOptional("roughly-enough-items")
 
