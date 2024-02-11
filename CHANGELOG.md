@@ -1,8 +1,4 @@
-This version brings bug fixes
+This version brings small things
 
-### Fixes
-#### Forge
-- Fixed Item Tags with planks
-- Boiler has a drop
-- #### Fabric
-- Boiler has a drop
+#### Forge and Fabric
+- Notebook API
