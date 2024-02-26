@@ -30,9 +30,3 @@ modId="terrablender"
 mandatory=true
 versionRange="[3.0.1.2,)"
 ordering="NONE"
-
-[[dependencies.betterbiomes]]
-modId="notebook"
-mandatory=true
-versionRange="[1.0,)"
-ordering="NONE"
