@@ -199,14 +199,12 @@ task curseforge(type: TaskPublishCurseForge) {
     def mainFile = upload(938715, jar)
     mainFile.releaseType = 'beta'
     mainFile.displayName = "Better Biomes Forge ${mod_display_name}"
-    mainFile.addGameVersion("1.20.4")
-    mainFile.addModLoader("NeoForge")
+    mainFile.addGameVersion("1.20.1")
+		mainFile.addModLoader("NeoForge")
     mainFile.addJavaVersion("Java 17")
     mainFile.changelog = project.file("CHANGELOG.md").text
     mainFile.changelogType = 'markdown'
-    mainFile.addEmbedded("fabric-api")
-    mainFile.addEmbedded("terrablender-fabric")
-    mainFile.addEmbedded("notebook-api")
+    mainFile.addEmbedded("terrablender")
     mainFile.addOptional("jei")
     mainFile.addOptional("roughly-enough-items")
 
