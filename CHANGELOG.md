@@ -1,4 +1,5 @@
-This version brings small things
+This version brings bug fixes
 
 #### Forge and Fabric
-- Notebook API
+- Fixed Maple Sapling not dropping from leaves
+- Spotless
