@@ -1,13 +1,15 @@
 package net.crypticverse.betterbiomes.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.crypticverse.betterbiomes.BetterBiomes;
+
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
 
 public class MapleSyrupBoilerScreen extends AbstractContainerScreen<MapleSyrupBoilerMenu> {
     private static final ResourceLocation TEXTURE =

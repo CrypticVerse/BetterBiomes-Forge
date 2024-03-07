@@ -1,8 +1,5 @@
 package net.crypticverse.betterbiomes.compat.jei;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
-import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
@@ -11,9 +8,14 @@ import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
 
 public class MapleSyrupCategory implements IRecipeCategory<MapleSyrupRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(BetterBiomes.MOD_ID, "maple_syrup");

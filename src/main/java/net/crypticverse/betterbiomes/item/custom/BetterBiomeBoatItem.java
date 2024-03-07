@@ -1,7 +1,8 @@
 package net.crypticverse.betterbiomes.item.custom;
 
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
+import java.util.List;
+import java.util.function.Predicate;
+
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -18,8 +19,8 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.List;
-import java.util.function.Predicate;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
 
 
 public class BetterBiomeBoatItem extends Item {

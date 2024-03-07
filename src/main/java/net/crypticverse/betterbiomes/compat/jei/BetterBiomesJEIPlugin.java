@@ -1,18 +1,20 @@
 package net.crypticverse.betterbiomes.compat.jei;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
-import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerScreen;
+import java.util.List;
+
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeManager;
 
-import java.util.List;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
+import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerScreen;
 
 @JeiPlugin
 public class BetterBiomesJEIPlugin implements IModPlugin {

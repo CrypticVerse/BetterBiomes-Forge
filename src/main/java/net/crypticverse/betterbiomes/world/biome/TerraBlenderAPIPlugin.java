@@ -1,9 +1,11 @@
 package net.crypticverse.betterbiomes.world.biome;
 
+import terrablender.api.Regions;
+
+import net.minecraft.resources.ResourceLocation;
+
 import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.world.biome.custom.BetterBiomesOverworldRegion;
-import net.minecraft.resources.ResourceLocation;
-import terrablender.api.Regions;
 
 public class TerraBlenderAPIPlugin {
     public static void registerRegions() {

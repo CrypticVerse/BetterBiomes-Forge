@@ -6,6 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7-SNAPSHOT' apply true
     id 'com.modrinth.minotaur' version '2.+'
+    id 'com.diffplug.spotless' version '6.25.0'
     id 'net.darkhax.curseforgegradle' version '1.1.18'
 }
 
@@ -15,7 +16,13 @@ group = mod_group_id
 base {
     archivesName = mod_id
 }
-
+spotless {
+    java {
+        removeUnusedImports()
+        importOrder('java', 'javax', '', 'net.minecraft', 'net.minecraftforge', 'net.crypticverse')
+        trimTrailingWhitespace()
+    }
+}
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

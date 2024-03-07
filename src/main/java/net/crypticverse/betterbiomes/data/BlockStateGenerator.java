@@ -1,15 +1,17 @@
 package net.crypticverse.betterbiomes.data;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 
 public class BlockStateGenerator extends BlockStateProvider {
     public BlockStateGenerator(PackOutput output, ExistingFileHelper exFileHelper) {

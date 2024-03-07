@@ -23,4 +23,3 @@ public class BetterBiomesSurfaceRules {
         return SurfaceRules.state(block.defaultBlockState());
     }
 }
-

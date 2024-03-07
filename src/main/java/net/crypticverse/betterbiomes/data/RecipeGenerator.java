@@ -1,14 +1,16 @@
 package net.crypticverse.betterbiomes.data;
 
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
-import net.crypticverse.betterbiomes.item.BetterBiomeItems;
+import java.util.function.Consumer;
+
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
-import java.util.function.Consumer;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import net.crypticverse.betterbiomes.item.BetterBiomeItems;
 
 public class RecipeGenerator extends RecipeProvider implements IConditionBuilder {
     public RecipeGenerator(PackOutput pOutput) {

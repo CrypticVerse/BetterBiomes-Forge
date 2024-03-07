@@ -1,14 +1,16 @@
 package net.crypticverse.betterbiomes.entity;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
 
 public class BetterBiomeEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =

@@ -7,6 +7,7 @@ import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
+
 import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
 import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerScreen;

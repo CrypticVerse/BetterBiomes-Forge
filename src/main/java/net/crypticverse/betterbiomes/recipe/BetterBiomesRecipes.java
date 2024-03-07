@@ -1,11 +1,13 @@
 package net.crypticverse.betterbiomes.recipe;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
 
 public class BetterBiomesRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =

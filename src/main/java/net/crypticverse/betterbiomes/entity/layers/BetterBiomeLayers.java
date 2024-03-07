@@ -1,8 +1,9 @@
 package net.crypticverse.betterbiomes.entity.layers;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.ResourceLocation;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
 
 public class BetterBiomeLayers {
 

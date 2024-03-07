@@ -1,7 +1,10 @@
 package net.crypticverse.betterbiomes.block.entity;
 
-import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
-import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerMenu;
+import java.util.Optional;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -18,15 +21,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.Optional;
+import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
+import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerMenu;
 
 public class MapleSyrupBoilerBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(2);

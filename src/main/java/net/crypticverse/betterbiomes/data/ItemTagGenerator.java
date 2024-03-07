@@ -1,17 +1,20 @@
 package net.crypticverse.betterbiomes.data;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
-import net.crypticverse.betterbiomes.util.BetterBiomesTags;
+import java.util.concurrent.CompletableFuture;
+
+import org.jetbrains.annotations.Nullable;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.concurrent.CompletableFuture;
+import net.minecraftforge.common.data.ExistingFileHelper;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import net.crypticverse.betterbiomes.util.BetterBiomesTags;
 
 public class ItemTagGenerator extends ItemTagsProvider {
     public ItemTagGenerator(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> future,

@@ -1,13 +1,16 @@
 package net.crypticverse.betterbiomes.fluid;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
+import org.joml.Vector3f;
+
 import net.minecraft.resources.ResourceLocation;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.joml.Vector3f;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
 
 public class BetterBiomeFluidTypes {
     public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");

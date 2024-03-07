@@ -1,16 +1,9 @@
 package net.crypticverse.betterbiomes.block;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.custom.*;
-import net.crypticverse.betterbiomes.fluid.BetterBiomeFluids;
-import net.crypticverse.betterbiomes.item.BetterBiomeItems;
-import net.crypticverse.betterbiomes.util.BetterBiomeWoodTypes;
-import net.crypticverse.betterbiomes.world.tree.MapleTreeGrower;
+import java.util.function.Supplier;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -19,12 +12,18 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.function.Supplier;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.custom.*;
+import net.crypticverse.betterbiomes.fluid.BetterBiomeFluids;
+import net.crypticverse.betterbiomes.item.BetterBiomeItems;
+import net.crypticverse.betterbiomes.util.BetterBiomeWoodTypes;
+import net.crypticverse.betterbiomes.world.tree.MapleTreeGrower;
 
 public class BetterBiomeBlocks {
     public static final DeferredRegister<Block> BLOCKS =

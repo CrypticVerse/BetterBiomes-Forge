@@ -1,8 +1,7 @@
 package net.crypticverse.betterbiomes.entity.custom;
 
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
-import net.crypticverse.betterbiomes.entity.BetterBiomeEntities;
-import net.crypticverse.betterbiomes.item.BetterBiomeItems;
+import java.util.function.IntFunction;
+
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -15,7 +14,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
-import java.util.function.IntFunction;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import net.crypticverse.betterbiomes.entity.BetterBiomeEntities;
+import net.crypticverse.betterbiomes.item.BetterBiomeItems;
 
 public class BetterBiomeBoatEntity extends Boat {
     private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(Boat.class, EntityDataSerializers.INT);

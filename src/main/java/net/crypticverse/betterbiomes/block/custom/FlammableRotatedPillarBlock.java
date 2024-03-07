@@ -1,6 +1,7 @@
 package net.crypticverse.betterbiomes.block.custom;
 
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import org.jetbrains.annotations.Nullable;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -8,8 +9,10 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
+
 import net.minecraftforge.common.ToolAction;
-import org.jetbrains.annotations.Nullable;
+
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 
 public class FlammableRotatedPillarBlock extends RotatedPillarBlock {
     public FlammableRotatedPillarBlock(Properties pProperties) {

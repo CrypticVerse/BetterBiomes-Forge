@@ -1,15 +1,17 @@
 package net.crypticverse.betterbiomes.item;
 
+import net.minecraft.world.item.*;
+
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
 import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
 import net.crypticverse.betterbiomes.fluid.BetterBiomeFluids;
 import net.crypticverse.betterbiomes.item.custom.BetterBiomeBoatItem;
-import net.minecraft.world.item.*;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
 public class BetterBiomeItems {
     public static final DeferredRegister<Item> ITEMS =

@@ -1,7 +1,7 @@
 package net.crypticverse.betterbiomes.world;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import java.util.List;
+
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -14,7 +14,8 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
-import java.util.List;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 
 public class BetterBiomePlacedFeatures {
     public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");

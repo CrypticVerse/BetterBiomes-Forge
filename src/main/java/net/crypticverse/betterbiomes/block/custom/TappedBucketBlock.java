@@ -1,6 +1,5 @@
 package net.crypticverse.betterbiomes.block.custom;
 
-import net.crypticverse.betterbiomes.util.BetterBiomesTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -15,6 +14,8 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import net.crypticverse.betterbiomes.util.BetterBiomesTags;
 
 public class TappedBucketBlock extends CocoaBlock {
     public static final int MAX_AGE = 2;

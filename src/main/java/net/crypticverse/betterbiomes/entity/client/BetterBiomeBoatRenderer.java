@@ -1,22 +1,24 @@
 package net.crypticverse.betterbiomes.entity.client;
 
+import java.util.Map;
+import java.util.stream.Stream;
+
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Pair;
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
-import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
+
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
+import net.minecraft.client.model.ListModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.ListModel;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.vehicle.Boat;
 
-import java.util.Map;
-import java.util.stream.Stream;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeBoatEntity;
+import net.crypticverse.betterbiomes.entity.custom.BetterBiomeChestBoatEntity;
 
 public class BetterBiomeBoatRenderer extends BoatRenderer {
     private final Map<BetterBiomeBoatEntity.Type, Pair<ResourceLocation, ListModel<Boat>>> boatResources;
