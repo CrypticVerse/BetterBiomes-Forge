@@ -60,7 +60,7 @@ public class BetterBiomesBiomes {
                         .waterFogColor(0x050533)
                         .skyColor(0x79a6ff)
                         .grassColorOverride(0x79c05a)
-                        .fogColor(0x22a1e6).build())
+                        .fogColor(0x93CEF5).build())
                 .build();
     }
 

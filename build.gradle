@@ -1,6 +1,7 @@
 import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id 'idea'
+    id 'signing'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '6.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
@@ -89,7 +90,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'betterbiomes', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 "${mod_id}" {
@@ -112,7 +113,6 @@ repositories {
     maven {
         url = "https://raw.githubusercontent.com/CrypticVerse/projectresources/master/maven"
     }
-    maven {url "https://maven.shedaniel.me"}
 }
 
 dependencies {
@@ -124,12 +124,6 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
     implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${minecraft_version}-${terrablender_version}")
-
-    runtimeOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:12.0.684")
-    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:12.0.684")
-    compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-default-plugin-forge:12.0.684")
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:11.1.118")
-    implementation fg.deobf("dev.architectury:architectury-forge:9.1.12")
 }
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
@@ -139,8 +133,7 @@ def replaceProperties = [
         loader_version_range: loader_version_range,
         mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
         mod_authors: mod_authors, mod_description: mod_description,
-        terrablender_version_range: terrablender_version_range,
-        notebook_version: notebook_version_range
+        terrablender_version_range: terrablender_version_range
 ]
 processResources {
     inputs.properties replaceProperties
@@ -165,6 +158,9 @@ jar {
         ])
     }
 }
+java {
+    withSourcesJar()
+}
 
 // Example configuration to allow publishing using the maven-publish plugin
 // This is the preferred method to reobfuscate your jar file
@@ -184,6 +180,9 @@ publishing {
             url System.getenv("MAVEN_URL").toString()
         }
     }
+}
+signing {
+    sign publishing.publications.mavenJava
 }
 
 tasks.withType(JavaCompile).configureEach {

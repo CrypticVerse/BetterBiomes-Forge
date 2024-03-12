@@ -14,9 +14,12 @@
   "block.betterbiomes.maple_pressure_plate": "Кленовая нажимная плита",
   "block.betterbiomes.maple_door": "Кленовая дверь",
   "block.betterbiomes.maple_trapdoor": "Кленовый люк",
+  "block.betterbiomes.maple_syrup": "Кленовый сироп",
   "block.betterbiomes.maple_syrup_boiler": "Чайник для кленового сиропа",
-  "block.betterbiomes.maple_sign": "Кленовая табличка",
+  "block.betterbiomes.maple_standing_sign": "Кленовая табличка",
+  "block.betterbiomes.maple_wall_sign": "Кленовая табличка",
   "block.betterbiomes.maple_hanging_sign": "Кленовая подвесная табличка",
+  "block.betterbiomes.maple_wall_hanging_sign": "Подвесная кленовая табличка",
   "item.betterbiomes.tapped_bucket": "Металлическое ведро",
   "item.betterbiomes.maple_syrup_bottle": "Бутылочка кленового сиропа",
   "item.betterbiomes.maple_syrup_bucket": "Ведро кленового сиропа",
@@ -30,5 +33,10 @@
   "item.betterbiomes.maple_pancake_stack": "Стопка кленовых блинов",
   "item.betterbiomes.chocolate_pancake": "Шоколадный блин",
   "item.betterbiomes.chocolate_pancake_stack": "Стопка шоколадных блинов",
-  "creativetab.biome_group": "Группа лучших биомов"
+  "itemgroup.betterbiomes": "Группа лучших биомов",
+  "_comment": "For forge things",
+  "block.betterbiomes.maple_sign": "Maple Sign",
+  "creativetab.biome_group": "Better Biomes Group",
+  "entity.betterbiomes.mod_chest_boat": "Chest Boat",
+  "biome.betterbiomes.maple_forest": "Maple Forest"
 }

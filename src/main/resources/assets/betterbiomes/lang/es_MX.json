@@ -14,9 +14,12 @@
   "block.betterbiomes.maple_pressure_plate": "Placa de presión de arce",
   "block.betterbiomes.maple_door": "Puerta de arce",
   "block.betterbiomes.maple_trapdoor": "Trampilla de arce",
+  "block.betterbiomes.maple_syrup": "Miel de maple",
   "block.betterbiomes.maple_syrup_boiler": "Caldera de jarabe de arce",
-  "block.betterbiomes.maple_sign": "Señal de arce",
+  "block.betterbiomes.maple_standing_sign": "Señal de arce",
+  "block.betterbiomes.maple_wall_sign": "Cartel de pared de Arce",
   "block.betterbiomes.maple_hanging_sign": "Señal colgante de arce",
+  "block.betterbiomes.maple_wall_hanging_sign": "Cartel colgante de pared de arce",
   "item.betterbiomes.tapped_bucket": "Cubo Tapped",
   "item.betterbiomes.maple_syrup_bottle": "Botella de jarabe de arce",
   "item.betterbiomes.maple_syrup_bucket": "Cubo de jarabe de arce",
@@ -30,5 +33,10 @@
   "item.betterbiomes.maple_pancake_stack": "Pila de panqueques de arce",
   "item.betterbiomes.chocolate_pancake": "Tortitas de chocolate",
   "item.betterbiomes.chocolate_pancake_stack": "Pila de panqueques de chocolate",
-  "creativetab.biome_group": "Mejor Grupo de Biomas"
+  "itemgroup.betterbiomes": "Mejor Grupo de Biomas",
+  "_comment": "For forge things",
+  "block.betterbiomes.maple_sign": "Maple Sign",
+  "creativetab.biome_group": "Better Biomes Group",
+  "entity.betterbiomes.mod_chest_boat": "Chest Boat",
+  "biome.betterbiomes.maple_forest": "Maple Forest"
 }

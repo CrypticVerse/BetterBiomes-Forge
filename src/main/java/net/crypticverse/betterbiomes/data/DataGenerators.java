@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import net.crypticverse.betterbiomes.BetterBiomes;
 
-@Mod.EventBusSubscriber(modid = BetterBiomes.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = "betterbiomes")
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
