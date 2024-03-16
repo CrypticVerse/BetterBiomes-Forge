@@ -1,3 +1,4 @@
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id 'idea'
     id 'signing'
@@ -5,7 +6,9 @@ plugins {
     id 'net.minecraftforge.gradle' version '6.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7-SNAPSHOT' apply true
-    id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
+    id 'com.modrinth.minotaur' version '2.+'
+    id 'net.darkhax.curseforgegradle' version '1.1.18'
+    id 'com.github.breadmoirai.github-release' version '2.+'
     id 'com.diffplug.spotless' version '6.25.0'
 }
 
@@ -186,28 +189,44 @@ signing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
-publishMods {
-    file = jar.archiveFile
-    changelog = rootProject.file("CHANGELOG.md").text
-    type = BETA
-    displayName = "Better Biomes Forge ${mod_name}"
-    modLoaders.add("forge")
-    modLoaders.add("neoforge")
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "Qs2o8KiI"
+    versionNumber = "forge-${mod_version}"
+    versionName = "Better Biomes Forge ${mod_display_name}"
+    versionType = "beta"
+    uploadFile = jar
+    gameVersions = ["1.20.1"]
+    loaders = ["forge", "neoforge"]
+    changelog = project.file("CHANGELOG.md").text
+}
+task curseforge(type: TaskPublishCurseForge) {
+    apiToken = System.getenv("CURSEFORGE_TOKEN")
 
-    modrinth {
-        accessToken = System.getenv("MODRINTH_TOKEN")
-        projectId = "Qs2o8KiI"
-        minecraftVersions.add(minecraft_version)
-    }
-    curseforge {
-        accessToken = System.getenv("CURSEFORGE_TOKEN")
-        projectId = "938715"
-        minecraftVersions.add(minecraft_version)
-    }
-    github {
-        accessToken = System.getenv("GITHUB_TOKEN")
-        repository = "CrypticVerse/BetterBiomes-Forge"
-        commitish = "1.20.1"
-        tagName = "forge-${mod_name}"
-    }
+    def mainFile = upload(938715, jar)
+    mainFile.releaseType = 'beta'
+    mainFile.displayName = "Better Biomes Forge ${mod_name}"
+    mainFile.addGameVersion("1.20.1")
+    mainFile.addModLoader("NeoForge")
+    mainFile.addJavaVersion("Java 17")
+    mainFile.changelog = project.file("CHANGELOG.md").text
+    mainFile.changelogType = 'markdown'
+    mainFile.addRequirement("terrablender")
+}
+githubRelease {
+    owner = "CrypticVerse"
+    repo = "BetterBiomes-Forge"
+    tagName = "forge-${mod_name}"
+    releaseName = "Better Biomes Forge ${mod_name}"
+    targetCommitish = "1.20.1"
+    draft = false
+    releaseAssets tasks.jar
+    body = project.file("CHANGELOG.md").text
+    token System.getenv("GITHUB_TOKEN")
+}
+tasks.register("publishMods") {
+    dependsOn tasks.modrinth
+    dependsOn tasks.curseforge
+    dependsOn tasks.githubRelease
+
 }
