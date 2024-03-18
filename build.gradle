@@ -1,0 +1,138 @@
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
+plugins {
+    id "net.minecraftforge.gradle" version "6.+"
+    id "org.spongepowered.mixin" version "0.7-SNAPSHOT"
+    id 'com.modrinth.minotaur' version '2.+'
+    id 'net.darkhax.curseforgegradle' version '1.1.18'
+    id 'com.github.breadmoirai.github-release' version '2.+'
+    id 'com.diffplug.spotless' version '6.25.0'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+group = "net.crypticverse.betterbiomes"
+base.archivesName = mod_name
+version = "2.1.5.1-${minecraft_version}"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.withSourcesJar()
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release.set(17)
+}
+tasks.withType(GenerateModuleMetadata) {
+    enabled = false
+}
+spotless {
+    java {
+        removeUnusedImports()
+        importOrder('java', 'javax', '', 'net.minecraft', 'net.minecraftforge', 'net.crypticverse')
+        trimTrailingWhitespace()
+    }
+}
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    runs {
+        client = {
+            workingDirectory = project.file("run")
+            ideaModule "${project.name}.main"
+            taskName 'Client'
+        }
+        server {
+            workingDirectory project.file('run')
+            ideaModule "${project.name}.main"
+            taskName 'Server'
+        }
+        data {
+            workingDirectory project.file('run')
+            ideaModule "${project.name}.main"
+            args '--mod', "betterbiomes", '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            taskName 'Data'
+        }
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/generated/resources'
+        }
+    }
+}
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
+    implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${terrablender_version}")
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'     : mod_name,
+            'Specification-Vendor'    : mod_author,
+            'Implementation-Title'    : project.name,
+            'Implementation-Vendor'   : mod_author,
+            'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            'Timestamp'               : System.currentTimeMillis(),
+            'Built-On-Java'           : "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
+            'Build-On-Minecraft'      : minecraft_version
+        ])
+    }
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    archiveClassifier = 'deobf'
+}
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "Qs2o8KiI"
+    versionNumber = "forge-${mod_version}"
+    versionName = "Better Biomes Forge ${mod_display_name}"
+    versionType = "beta"
+    uploadFile = jar
+    gameVersions = ["1.20.4"]
+    loaders = ["forge", "neoforge"]
+    changelog = project.file("CHANGELOG.md").text
+}
+task curseforge(type: TaskPublishCurseForge) {
+    apiToken = System.getenv("CURSEFORGE_TOKEN")
+
+    def mainFile = upload(938715, jar)
+    mainFile.releaseType = 'beta'
+    mainFile.displayName = "Better Biomes Forge ${mod_name}"
+    mainFile.addGameVersion("1.20.4")
+    mainFile.addModLoader("NeoForge")
+    mainFile.addJavaVersion("Java 17")
+    mainFile.changelog = project.file("CHANGELOG.md").text
+    mainFile.changelogType = 'markdown'
+    mainFile.addRequirement("terrablender")
+}
+githubRelease {
+    owner = "CrypticVerse"
+    repo = "BetterBiomes-Forge"
+    tagName = "forge-${mod_name}"
+    releaseName = "Better Biomes Forge ${mod_name}"
+    targetCommitish = "1.20.4"
+    draft = false
+    releaseAssets tasks.jar
+    body = project.file("CHANGELOG.md").text
+    token System.getenv("GITHUB_TOKEN")
+}
+tasks.register("publishMods") {
+    dependsOn tasks.modrinth
+    dependsOn tasks.curseforge
+    dependsOn tasks.githubRelease
+
+}

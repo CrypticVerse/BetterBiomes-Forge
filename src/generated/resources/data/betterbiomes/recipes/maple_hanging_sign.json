@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "betterbiomes:stripped_maple_log"
+    }
+  },
+  "pattern": [
+    "C C",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 6,
+    "item": "betterbiomes:maple_hanging_sign"
+  }
+}

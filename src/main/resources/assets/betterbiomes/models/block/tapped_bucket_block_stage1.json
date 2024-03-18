@@ -1,0 +1,30 @@
+{
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "betterbiomes:block/tapped_bucket_block_stage1",
+    "tapped": "betterbiomes:block/tapped_bucket_block_stage1"
+  },
+  "elements": [
+    {
+      "from": [ 4, 3, 7 ],
+      "to": [ 12, 12, 15 ],
+      "faces": {
+        "up":    { "uv": [ 0, 0,  8,  8 ], "texture": "#tapped" },
+        "down":  { "uv": [ 0, 0,  8,  8 ], "texture": "#tapped" },
+        "north": { "uv": [ 8, 4, 16, 13 ], "texture": "#tapped" },
+        "south": { "uv": [ 8, 4, 16, 13 ], "texture": "#tapped" },
+        "west":  { "uv": [ 8, 4, 16, 13 ], "texture": "#tapped" },
+        "east":  { "uv": [ 8, 4, 16, 13 ], "texture": "#tapped" }
+      }
+    },
+    {
+      "from": [ 8, 12, 12 ],
+      "to": [ 8, 16, 16 ],
+      "faces": {
+        "east": { "uv": [ 16, 0, 12, 4 ], "texture": "#tapped" },
+        "west": { "uv": [ 12, 0, 16, 4 ], "texture": "#tapped" }
+      }
+    }
+  ]
+}

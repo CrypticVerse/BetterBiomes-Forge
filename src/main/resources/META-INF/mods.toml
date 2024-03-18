@@ -1,0 +1,24 @@
+modLoader="javafml"
+license="All Rights Reserved"
+loaderVersion="[49,)"
+
+[[mods]]
+    modId="betterbiomes"
+    version="${mod_version}"
+    displayName="Better Biomes"
+	authors="Cryptic"
+    description="Adds BIOMES!"
+
+[[dependencies.betterbiomes]]
+    modId="forge"
+    mandatory=true
+    versionRange="[49.0.34,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.betterbiomes]]
+    modId="terrablender"
+    mandatory=true
+    versionRange="[3.3.0.4,)"
+    ordering="AFTER"
+    side="BOTH"

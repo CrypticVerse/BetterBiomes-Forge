@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "betterbiomes:block/stripped_maple_log",
+    "side": "betterbiomes:block/stripped_maple_log"
+  }
+}
