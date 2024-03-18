@@ -1,6 +1,5 @@
 package net.crypticverse.betterbiomes.data;
 
-import java.util.function.Consumer;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;

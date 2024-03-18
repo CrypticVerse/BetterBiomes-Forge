@@ -2,7 +2,6 @@ package net.crypticverse.betterbiomes.data;
 
 import java.util.concurrent.CompletableFuture;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

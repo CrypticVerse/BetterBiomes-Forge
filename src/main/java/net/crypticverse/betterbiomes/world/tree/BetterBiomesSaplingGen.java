@@ -3,8 +3,9 @@ package net.crypticverse.betterbiomes.world.tree;
 
 import java.util.Optional;
 
-import net.crypticverse.betterbiomes.world.BetterBiomeConfiguredFeatures;
 import net.minecraft.world.level.block.grower.TreeGrower;
+
+import net.crypticverse.betterbiomes.world.BetterBiomeConfiguredFeatures;
 
 public class BetterBiomesSaplingGen {
     public static final TreeGrower MAPLE =

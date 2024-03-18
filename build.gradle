@@ -99,7 +99,7 @@ modrinth {
     token = System.getenv("MODRINTH_TOKEN")
     projectId = "Qs2o8KiI"
     versionNumber = "forge-${mod_version}"
-    versionName = "Better Biomes Forge ${mod_display_name}"
+    versionName = "Better Biomes Forge ${publish_name}"
     versionType = "beta"
     uploadFile = jar
     gameVersions = ["1.20.4"]
@@ -111,7 +111,7 @@ task curseforge(type: TaskPublishCurseForge) {
 
     def mainFile = upload(938715, jar)
     mainFile.releaseType = 'beta'
-    mainFile.displayName = "Better Biomes Forge ${mod_name}"
+    mainFile.displayName = "Better Biomes Forge ${publish_name}"
     mainFile.addGameVersion("1.20.4")
     mainFile.addModLoader("NeoForge")
     mainFile.addJavaVersion("Java 17")
@@ -123,7 +123,7 @@ githubRelease {
     owner = "CrypticVerse"
     repo = "BetterBiomes-Forge"
     tagName = "forge-${mod_name}"
-    releaseName = "Better Biomes Forge ${mod_name}"
+    releaseName = "Better Biomes Forge ${publish_name}"
     targetCommitish = "1.20.4"
     draft = false
     releaseAssets tasks.jar

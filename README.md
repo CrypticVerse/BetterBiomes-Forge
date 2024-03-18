@@ -16,8 +16,8 @@ Maple trees, maple related items, and maple sap
 ## Compatibility
 
 This mod is compatible with Fabric, Quilt, Forge, and NeoForge. This is the Neo/Forge repo.
-- Minecraft 1.20.1
-- Forge 47.1.3 or higher
+- Minecraft 1.20.4
+- Forge 49.0.34 or higher
 
 ## Contributing
 
@@ -39,7 +39,7 @@ repositories {
 
 ### Implementation
 ```gradle
-implementation fg.deobf("net.crypticverse.betterbiomes:BetterBiomes-Forge:${betterbiomes_version}-${mc_version}
+implementation fg.deobf("net.crypticverse.betterbiomes:BetterBiomes-Forge:${betterbiomes_version}-1.20.4
 ```
 
 ### A quick note
@@ -54,7 +54,7 @@ maven {url = "https://maven.shedaniel.me"}
 - OpenJDK 17 or higher.
   We recommend using the JDK from [Eclipse Termurin](https://adoptium.net/temurin/releases/?version=17), as it works without issues.
 
-- Gradle 8.3 or higher (optional)
+- Gradle 8.4 or higher (optional)
   Gradle is already provided in this repository, so you do not need to download it seperatley
 
   ## License

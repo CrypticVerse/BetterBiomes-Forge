@@ -55,7 +55,6 @@ public class BetterBiomes
         BetterBiomesMenuTypes.register(modEventBus);
         BetterBiomesRecipes.register(modEventBus);
         BetterBiomeEntities.register(modEventBus);
-        Sheets.addWoodType(BetterBiomeWoodTypes.MAPLE);
         TerraBlenderAPIPlugin.registerRegions();
         BetterBiomeGroup.register(modEventBus);
         BetterBiomeFluidTypes.register(modEventBus);
@@ -89,6 +88,7 @@ public class BetterBiomes
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(BetterBiomeWoodTypes.MAPLE);
             MenuScreens.register(BetterBiomesMenuTypes.MAPLE_SYRUP_MENU.get(), MapleSyrupBoilerScreen::new);
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, BetterBiomesSurfaceRules.makeRules());
             EntityRenderers.register(BetterBiomeEntities.MOD_BOAT.get(), pContext -> new BetterBiomeBoatRenderer(pContext, false));

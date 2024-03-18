@@ -4,7 +4,7 @@ loaderVersion="[49,)"
 
 [[mods]]
     modId="betterbiomes"
-    version="${mod_version}"
+    version="2.1.5.1-1.20.4"
     displayName="Better Biomes"
 	authors="Cryptic"
     description="Adds BIOMES!"
