@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "betterbiomes:oasis",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1196324785,
+
+    "spacing": 30,
+
+    "separation": 9,
+
+    "type": "minecraft:random_spread"
+  }
+}

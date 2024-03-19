@@ -1,7 +1,6 @@
-This version brings changes
+This version brings additions
 
-#### Forge
-- Forge is now ported to 1.20.4!
-- All features are the same on 1.20.4 Forge
-- Requires Forge 49.0.34
-- JEI AND REI are disabled until 2.1.5.3
+#### Forge and Fabric
+- New oasis structure!
+- Find this rare structure generating in the desert biome
+- Our tests show there is 1 per ~3000 blocks, so it's a LUCKY find!
