@@ -25,6 +25,9 @@
 
 package net.crypticverse.betterbiomes.compat.rei;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import me.shedaniel.math.Point;
 import me.shedaniel.math.Rectangle;
 import me.shedaniel.rei.api.client.gui.Renderer;
@@ -34,13 +37,12 @@ import me.shedaniel.rei.api.client.registry.display.DisplayCategory;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.util.EntryStacks;
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.LinkedList;
-import java.util.List;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 
 public class MapleSyrupCategory implements DisplayCategory<BasicDisplay> {
     public static final ResourceLocation TEXTURE =

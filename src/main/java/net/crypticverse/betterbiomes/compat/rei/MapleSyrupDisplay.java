@@ -25,17 +25,19 @@
 
 package net.crypticverse.betterbiomes.compat.rei;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.shedaniel.rei.api.common.util.EntryStacks;
-import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
+
 import net.minecraft.world.item.crafting.RecipeHolder;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import net.crypticverse.betterbiomes.recipe.MapleSyrupRecipe;
 
 public class MapleSyrupDisplay extends BasicDisplay {
     public MapleSyrupDisplay(List<EntryIngredient> inputs, List<EntryIngredient> outputs) {
