@@ -5,6 +5,7 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -19,6 +20,7 @@ import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 
 public class BetterBiomeConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> THIN_KEY = registerKey("thin");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -27,6 +29,13 @@ public class BetterBiomeConfiguredFeatures {
                 BlockStateProvider.simple(BetterBiomeBlocks.MAPLE_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.simple(BetterBiomeBlocks.MAPLE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, THIN_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(BetterBiomeBlocks.THIN_BIRCH_LOG.get()),
+                new StraightTrunkPlacer(5, 2, 0),
+                BlockStateProvider.simple(Blocks.BIRCH_LEAVES),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }

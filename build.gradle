@@ -72,11 +72,14 @@ sourceSets.each {
 }
 repositories {
     maven {url = "https://maven.shedaniel.me"}
+    maven { url = "https://raw.githubusercontent.com/CrypticVerse/projectresources/master/maven" }
 }
 dependencies {
     minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
 
     implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${terrablender_version}")
+
+    implementation fg.deobf("com.bookkeepersmc:Notebook-api-forge-${minecraft_version}:1.1.10+${minecraft_version}")
 
     compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:${rei_version}")
     runtimeOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${rei_version}")

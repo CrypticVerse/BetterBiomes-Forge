@@ -3,6 +3,22 @@
     "betterbiomes:maple_log",
     "betterbiomes:maple_wood",
     "betterbiomes:stripped_maple_log",
-    "betterbiomes:stripped_maple_wood"
+    "betterbiomes:stripped_maple_wood",
+    "betterbiomes:thin_acacia_log",
+    "betterbiomes:thin_birch_log",
+    "betterbiomes:thin_cherry_log",
+    "betterbiomes:thin_dark_oak_log",
+    "betterbiomes:thin_jungle_log",
+    "betterbiomes:thin_mangrove_log",
+    "betterbiomes:thin_oak_log",
+    "betterbiomes:thin_spruce_log",
+    "betterbiomes:stripped_thin_acacia_log",
+    "betterbiomes:stripped_thin_birch_log",
+    "betterbiomes:stripped_thin_cherry_log",
+    "betterbiomes:stripped_thin_dark_oak_log",
+    "betterbiomes:stripped_thin_jungle_log",
+    "betterbiomes:stripped_thin_mangrove_log",
+    "betterbiomes:stripped_thin_oak_log",
+    "betterbiomes:stripped_thin_spruce_log"
   ]
 }

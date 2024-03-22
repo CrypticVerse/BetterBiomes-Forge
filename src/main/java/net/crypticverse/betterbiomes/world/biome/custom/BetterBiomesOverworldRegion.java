@@ -25,6 +25,7 @@ public class BetterBiomesOverworldRegion extends Region {
             ResourceKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, BetterBiomesBiomes.MAPLE_FOREST);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.BIRCH_FOREST, BetterBiomesBiomes.THIN_BIRCH_FOREST);
         });
     }
 }

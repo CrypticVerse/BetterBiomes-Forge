@@ -1,13 +1,21 @@
-// 1.20.4	2024-03-18T11:42:17.7710301	Block Tags
+// 1.20.4	2024-03-21T17:37:29.5181601	Block Tags
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/betterbiomes/tags/blocks/maple_logs.json
+86e654fc602d397c5701769be473dc179dcc7bb0 data/minecraft/tags/blocks/acacia_logs.json
+4ffb68838a21391d53bc17e2ffa5a31277705bda data/minecraft/tags/blocks/birch_logs.json
 45e7f9573f50622601f197bbdb76b1120d458ce4 data/minecraft/tags/blocks/ceiling_hanging_signs.json
+93c3a32c9b417d0475434ff54811d399114c7bf9 data/minecraft/tags/blocks/cherry_logs.json
+85d48bd856157553fd5c6856032e2cf107c4aca9 data/minecraft/tags/blocks/dark_oak_logs.json
 b18e1620d40776a88c36a70eb3fbc3af6adc1d26 data/minecraft/tags/blocks/fences.json
 a0f0706a4338409caae31368a89b0f2df4097786 data/minecraft/tags/blocks/fence_gates.json
+e6a780a4b573f250c209fd5dcc94d9431b2e3479 data/minecraft/tags/blocks/jungle_logs.json
 09e3e245578d544dec59ea1fe9ad735ad3b09efc data/minecraft/tags/blocks/leaves.json
-532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs.json
-532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/blocks/logs_that_burn.json
+471841d11d3b96bd64ae11bf11ac37343f3707db data/minecraft/tags/blocks/logs.json
+471841d11d3b96bd64ae11bf11ac37343f3707db data/minecraft/tags/blocks/logs_that_burn.json
+55e84af5e183ef6e335d7f74b134c8ec833d6fd1 data/minecraft/tags/blocks/mangrove_logs.json
 930670a6ddc5ca43d17fcc2af929bf539cedb1d4 data/minecraft/tags/blocks/mineable/pickaxe.json
+ffab9ddc854f76def158aee3c51de2981422185a data/minecraft/tags/blocks/oak_logs.json
 2982743d0f693b0960bfc9ed4c75a8a11d2097e0 data/minecraft/tags/blocks/planks.json
+6bd18207b842ec9f97a7aa42df110cba8426ea32 data/minecraft/tags/blocks/spruce_logs.json
 2b840c820908ff63e2119652f2e29fd859cecc9a data/minecraft/tags/blocks/standing_signs.json
 da27e0d4cfc741d0a62efb81834a3159425546c4 data/minecraft/tags/blocks/wall_hanging_signs.json
 79814911ea7fa1bf6af7d366e427afb8e28375ca data/minecraft/tags/blocks/wall_signs.json

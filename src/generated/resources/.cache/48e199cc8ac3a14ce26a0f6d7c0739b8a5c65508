@@ -1,4 +1,12 @@
-// 1.20.4	2024-03-18T11:42:17.7740202	Item Tags
+// 1.20.4	2024-03-21T17:37:29.5201535	Item Tags
 532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/betterbiomes/tags/items/maple_logs.json
-532d611487dd5fc2dc57373c2cebfd5c1fce7879 data/minecraft/tags/items/logs_that_burn.json
+86e654fc602d397c5701769be473dc179dcc7bb0 data/minecraft/tags/items/acacia_logs.json
+4ffb68838a21391d53bc17e2ffa5a31277705bda data/minecraft/tags/items/birch_logs.json
+93c3a32c9b417d0475434ff54811d399114c7bf9 data/minecraft/tags/items/cherry_logs.json
+85d48bd856157553fd5c6856032e2cf107c4aca9 data/minecraft/tags/items/dark_oak_logs.json
+e6a780a4b573f250c209fd5dcc94d9431b2e3479 data/minecraft/tags/items/jungle_logs.json
+471841d11d3b96bd64ae11bf11ac37343f3707db data/minecraft/tags/items/logs_that_burn.json
+55e84af5e183ef6e335d7f74b134c8ec833d6fd1 data/minecraft/tags/items/mangrove_logs.json
+ffab9ddc854f76def158aee3c51de2981422185a data/minecraft/tags/items/oak_logs.json
 2982743d0f693b0960bfc9ed4c75a8a11d2097e0 data/minecraft/tags/items/planks.json
+6bd18207b842ec9f97a7aa42df110cba8426ea32 data/minecraft/tags/items/spruce_logs.json

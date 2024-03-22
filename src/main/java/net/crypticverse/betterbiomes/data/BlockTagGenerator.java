@@ -27,12 +27,55 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(BetterBiomeBlocks.MAPLE_LOG.get())
                 .add(BetterBiomeBlocks.MAPLE_WOOD.get())
                 .add(BetterBiomeBlocks.STRIPPED_MAPLE_LOG.get())
-                .add(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get());
+                .add(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get())
+                .add(BetterBiomeBlocks.THIN_ACACIA_LOG.get())
+                .add(BetterBiomeBlocks.THIN_BIRCH_LOG.get())
+                .add(BetterBiomeBlocks.THIN_CHERRY_LOG.get())
+                .add(BetterBiomeBlocks.THIN_DARK_OAK_LOG.get())
+                .add(BetterBiomeBlocks.THIN_JUNGLE_LOG.get())
+                .add(BetterBiomeBlocks.THIN_MANGROVE_LOG.get())
+                .add(BetterBiomeBlocks.THIN_OAK_LOG.get())
+                .add(BetterBiomeBlocks.THIN_SPRUCE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_BIRCH_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_CHERRY_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_DARK_OAK_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_JUNGLE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_MANGROVE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_OAK_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_SPRUCE_LOG.get());
+        
         this.tag(BlockTags.LOGS)
                 .add(BetterBiomeBlocks.MAPLE_LOG.get())
                 .add(BetterBiomeBlocks.MAPLE_WOOD.get())
                 .add(BetterBiomeBlocks.STRIPPED_MAPLE_LOG.get())
-                .add(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get());
+                .add(BetterBiomeBlocks.STRIPPED_MAPLE_WOOD.get())
+                .add(BetterBiomeBlocks.THIN_ACACIA_LOG.get())
+                .add(BetterBiomeBlocks.THIN_BIRCH_LOG.get())
+                .add(BetterBiomeBlocks.THIN_CHERRY_LOG.get())
+                .add(BetterBiomeBlocks.THIN_DARK_OAK_LOG.get())
+                .add(BetterBiomeBlocks.THIN_JUNGLE_LOG.get())
+                .add(BetterBiomeBlocks.THIN_MANGROVE_LOG.get())
+                .add(BetterBiomeBlocks.THIN_OAK_LOG.get())
+                .add(BetterBiomeBlocks.THIN_SPRUCE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_BIRCH_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_CHERRY_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_DARK_OAK_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_JUNGLE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_MANGROVE_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_OAK_LOG.get())
+                .add(BetterBiomeBlocks.STRIPPED_THIN_SPRUCE_LOG.get());
+
+        this.tag(BlockTags.ACACIA_LOGS).add(BetterBiomeBlocks.THIN_ACACIA_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        this.tag(BlockTags.BIRCH_LOGS).add(BetterBiomeBlocks.THIN_BIRCH_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_BIRCH_LOG.get());
+        this.tag(BlockTags.CHERRY_LOGS).add(BetterBiomeBlocks.THIN_CHERRY_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_CHERRY_LOG.get());
+        this.tag(BlockTags.DARK_OAK_LOGS).add(BetterBiomeBlocks.THIN_DARK_OAK_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        this.tag(BlockTags.JUNGLE_LOGS).add(BetterBiomeBlocks.THIN_JUNGLE_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        this.tag(BlockTags.MANGROVE_LOGS).add(BetterBiomeBlocks.THIN_MANGROVE_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        this.tag(BlockTags.OAK_LOGS).add(BetterBiomeBlocks.THIN_OAK_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        this.tag(BlockTags.SPRUCE_LOGS).add(BetterBiomeBlocks.THIN_SPRUCE_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
+        
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BetterBiomeBlocks.MAPLE_SYRUP_BOILER.get());
 

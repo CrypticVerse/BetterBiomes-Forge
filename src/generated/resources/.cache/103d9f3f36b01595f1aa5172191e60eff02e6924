@@ -1,5 +1,8 @@
-// 1.20.4	2024-03-18T11:42:17.7740202	Registries
+// 1.20.4	2024-03-21T20:44:15.0144568	Registries
 143d1a4390452514365dc84bc7a9ae7f9023b1ac data/betterbiomes/forge/biome_modifier/add_tree_maple.json
-363dcf70a3360100d4004cd10c0254785b1cc322 data/betterbiomes/worldgen/biome/maple_forest.json
+b019f46cc52f10525b05360718efc8e14cd8b05f data/betterbiomes/worldgen/biome/maple_forest.json
+c491a8c7464fac0b47824d5ffb7714aa48336139 data/betterbiomes/worldgen/biome/thin_birch_forest.json
 bb2d919bcecdfdac9165119262cdc01699360d5e data/betterbiomes/worldgen/configured_feature/maple.json
+d11a0f311048dec91fd008ad1fddd626dd45c095 data/betterbiomes/worldgen/configured_feature/thin.json
 892b7c2080ba69a756b79cb08eebc8748ab5ddf4 data/betterbiomes/worldgen/placed_feature/maple_placed.json
+c283e62405930845289066a6f8d1ff1cb35d4197 data/betterbiomes/worldgen/placed_feature/thin_placed.json

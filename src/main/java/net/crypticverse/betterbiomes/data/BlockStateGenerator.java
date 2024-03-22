@@ -23,6 +23,26 @@ public class BlockStateGenerator extends BlockStateProvider {
         simpleBlockWithItem(BetterBiomeBlocks.MAPLE_SYRUP_BOILER.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/maple_syrup_boiler")));
 
+        // hahaha I LOVE forge. If anyone has got a better way to this, feel free to make a PR!
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_ACACIA_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_acacia_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_BIRCH_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_birch_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_CHERRY_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_cherry_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_DARK_OAK_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_dark_oak_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_JUNGLE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_jungle_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_MANGROVE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_mangrove_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_OAK_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_oak_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.THIN_SPRUCE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/thin_spruce_log")));
+
+        // Stripped
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_acacia_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_BIRCH_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_birch_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_CHERRY_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_cherry_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_DARK_OAK_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_dark_oak_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_JUNGLE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_jungle_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_MANGROVE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_mangrove_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_OAK_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_oak_log")));
+        simpleBlockWithItem(BetterBiomeBlocks.STRIPPED_THIN_SPRUCE_LOG.get(), new ModelFile.UncheckedModelFile(modLoc("block/stripped_thin_spruce_log")));
+
         logBlock(((RotatedPillarBlock) BetterBiomeBlocks.MAPLE_LOG.get()));
         axisBlock(((RotatedPillarBlock) BetterBiomeBlocks.MAPLE_WOOD.get()), blockTexture(BetterBiomeBlocks.MAPLE_LOG.get()), blockTexture(BetterBiomeBlocks.MAPLE_LOG.get()));
         axisBlock((RotatedPillarBlock) BetterBiomeBlocks.STRIPPED_MAPLE_LOG.get(), new ResourceLocation(BetterBiomes.MOD_ID, "block/stripped_maple_log"),

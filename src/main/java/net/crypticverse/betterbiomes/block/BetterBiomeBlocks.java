@@ -30,6 +30,7 @@ public class BetterBiomeBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BetterBiomes.MOD_ID);
 
+    // Maple Wood
     public static final RegistryObject<Block> MAPLE_SYRUP_BOILER = registerBlock("maple_syrup_boiler", () -> new MapleSyrupBoilerBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log", () -> new FlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log", () -> new FlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
@@ -56,6 +57,27 @@ public class BetterBiomeBlocks {
 
     public static final RegistryObject<LiquidBlock> MAPLE_SYRUP_BLOCK = BLOCKS.register("maple_syrup_block",
             () -> new LiquidBlock(BetterBiomeFluids.SOURCE_MAPLE_SYRUP, BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable()));
+
+
+    // Thin Logs
+    public static final RegistryObject<Block> THIN_ACACIA_LOG = registerBlock("thin_acacia_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LOG)));
+    public static final RegistryObject<Block> THIN_BIRCH_LOG = registerBlock("thin_birch_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_LOG)));
+    public static final RegistryObject<Block> THIN_CHERRY_LOG = registerBlock("thin_cherry_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LOG)));
+    public static final RegistryObject<Block> THIN_DARK_OAK_LOG = registerBlock("thin_dark_oak_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_LOG)));
+    public static final RegistryObject<Block> THIN_JUNGLE_LOG = registerBlock("thin_jungle_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_LOG)));
+    public static final RegistryObject<Block> THIN_MANGROVE_LOG = registerBlock("thin_mangrove_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_LOG)));
+    public static final RegistryObject<Block> THIN_OAK_LOG = registerBlock("thin_oak_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> THIN_SPRUCE_LOG = registerBlock("thin_spruce_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LOG)));
+
+    // Stripped Thin Logs
+    public static final RegistryObject<Block> STRIPPED_THIN_ACACIA_LOG = registerBlock("stripped_thin_acacia_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_BIRCH_LOG = registerBlock("stripped_thin_birch_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_BIRCH_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_CHERRY_LOG = registerBlock("stripped_thin_cherry_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_DARK_OAK_LOG = registerBlock("stripped_thin_dark_oak_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_DARK_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_JUNGLE_LOG = registerBlock("stripped_thin_jungle_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_JUNGLE_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_MANGROVE_LOG = registerBlock("stripped_thin_mangrove_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_MANGROVE_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_OAK_LOG = registerBlock("stripped_thin_oak_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_THIN_SPRUCE_LOG = registerBlock("stripped_thin_spruce_log", () -> new ThinTreeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_SPRUCE_LOG)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

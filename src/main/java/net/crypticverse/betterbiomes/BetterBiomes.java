@@ -1,6 +1,7 @@
 package net.crypticverse.betterbiomes;
 
 import com.mojang.logging.LogUtils;
+import net.crypticverse.betterbiomes.world.BiomeModificationsExperimental;
 import org.slf4j.Logger;
 import terrablender.api.SurfaceRuleManager;
 
@@ -56,6 +57,7 @@ public class BetterBiomes
         BetterBiomesRecipes.register(modEventBus);
         BetterBiomeEntities.register(modEventBus);
         TerraBlenderAPIPlugin.registerRegions();
+        BiomeModificationsExperimental.registerGeneration();
         BetterBiomeGroup.register(modEventBus);
         BetterBiomeFluidTypes.register(modEventBus);
         BetterBiomeFluids.register(modEventBus);
