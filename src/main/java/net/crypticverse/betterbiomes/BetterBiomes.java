@@ -1,7 +1,6 @@
 package net.crypticverse.betterbiomes;
 
 import com.mojang.logging.LogUtils;
-import net.crypticverse.betterbiomes.world.BiomeModificationsExperimental;
 import org.slf4j.Logger;
 import terrablender.api.SurfaceRuleManager;
 
@@ -34,6 +33,7 @@ import net.crypticverse.betterbiomes.recipe.BetterBiomesRecipes;
 import net.crypticverse.betterbiomes.screen.BetterBiomesMenuTypes;
 import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerScreen;
 import net.crypticverse.betterbiomes.util.BetterBiomeWoodTypes;
+import net.crypticverse.betterbiomes.world.BiomeModificationsExperimental;
 import net.crypticverse.betterbiomes.world.biome.TerraBlenderAPIPlugin;
 import net.crypticverse.betterbiomes.world.biome.surface.BetterBiomesSurfaceRules;
 

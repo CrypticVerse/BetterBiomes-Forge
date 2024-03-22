@@ -27,9 +27,11 @@ package net.crypticverse.betterbiomes.world;
 
 import com.bookkeepersmc.notebook.common.world.BiomeRegistry;
 import com.bookkeepersmc.notebook.common.world.SelectBiomes;
-import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
+
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
+
+import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
 
 public class BiomeModificationsExperimental {
     public static void registerGeneration() {

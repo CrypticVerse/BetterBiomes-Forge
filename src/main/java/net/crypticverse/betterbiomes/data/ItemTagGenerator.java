@@ -2,7 +2,6 @@ package net.crypticverse.betterbiomes.data;
 
 import java.util.concurrent.CompletableFuture;
 
-import net.minecraft.tags.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.core.HolderLookup;

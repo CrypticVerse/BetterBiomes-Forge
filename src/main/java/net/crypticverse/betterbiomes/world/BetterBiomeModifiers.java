@@ -1,17 +1,10 @@
 package net.crypticverse.betterbiomes.world;
 
-import com.bookkeepersmc.notebook.common.world.BiomeRegistry;
-import com.bookkeepersmc.notebook.common.world.SelectBiomes;
-import dev.architectury.registry.level.biome.BiomeModifications;
-import net.crypticverse.betterbiomes.util.BetterBiomesTags;
-import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
 import net.minecraftforge.common.Tags;

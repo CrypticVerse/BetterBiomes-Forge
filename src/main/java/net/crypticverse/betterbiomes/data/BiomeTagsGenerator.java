@@ -25,16 +25,19 @@
 
 package net.crypticverse.betterbiomes.data;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
-import net.crypticverse.betterbiomes.util.BetterBiomesTags;
+import java.util.concurrent.CompletableFuture;
+
+import org.jetbrains.annotations.Nullable;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.BiomeTagsProvider;
 import net.minecraft.world.level.biome.Biomes;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.concurrent.CompletableFuture;
+import net.minecraftforge.common.data.ExistingFileHelper;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.util.BetterBiomesTags;
 
 public class BiomeTagsGenerator extends BiomeTagsProvider {
     public BiomeTagsGenerator(PackOutput p_255800_, CompletableFuture<HolderLookup.Provider> p_256205_,@Nullable ExistingFileHelper existingFileHelper) {

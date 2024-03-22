@@ -44,7 +44,7 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(BetterBiomeBlocks.STRIPPED_THIN_MANGROVE_LOG.get())
                 .add(BetterBiomeBlocks.STRIPPED_THIN_OAK_LOG.get())
                 .add(BetterBiomeBlocks.STRIPPED_THIN_SPRUCE_LOG.get());
-        
+
         this.tag(BlockTags.LOGS)
                 .add(BetterBiomeBlocks.MAPLE_LOG.get())
                 .add(BetterBiomeBlocks.MAPLE_WOOD.get())
@@ -75,7 +75,7 @@ public class BlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MANGROVE_LOGS).add(BetterBiomeBlocks.THIN_MANGROVE_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
         this.tag(BlockTags.OAK_LOGS).add(BetterBiomeBlocks.THIN_OAK_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
         this.tag(BlockTags.SPRUCE_LOGS).add(BetterBiomeBlocks.THIN_SPRUCE_LOG.get()).add(BetterBiomeBlocks.STRIPPED_THIN_ACACIA_LOG.get());
-        
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BetterBiomeBlocks.MAPLE_SYRUP_BOILER.get());
 
