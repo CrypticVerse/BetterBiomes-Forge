@@ -1,6 +1,7 @@
 import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id "net.minecraftforge.gradle" version "6.+"
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id "org.spongepowered.mixin" version "0.7-SNAPSHOT"
     id 'com.modrinth.minotaur' version '2.+'
     id 'net.darkhax.curseforgegradle' version '1.1.18'
@@ -35,7 +36,8 @@ spotless {
 }
 
 minecraft {
-    mappings channel: 'official', version: minecraft_version
+    // Change in gradle.properties. Use Official when parchment isn't released. Otherwise, use ParchmentMC
+    mappings channel: mapping_channel, version: mappings_version
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
