@@ -6,4 +6,5 @@ This version brings additions
 - Our tests show there is 1 per ~3000 blocks, so it's a LUCKY find!
 - Re-added REI support
 - Thin Logs and a thin birch forest
+- Thin logs are strippable and waterloggable
 - Maple forest is tweaked to spawn with oak trees

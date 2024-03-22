@@ -44,7 +44,8 @@
       "state": {
         "Name": "betterbiomes:thin_birch_log",
         "Properties": {
-          "axis": "y"
+          "axis": "x",
+          "waterlogged": "false"
         }
       }
     }
