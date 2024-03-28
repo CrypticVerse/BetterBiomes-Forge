@@ -22,7 +22,6 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.block;
 
 import com.bookkeepersmc.notebook.registry.content.StrippableRegistry;

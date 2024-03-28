@@ -22,7 +22,6 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.world;
 
 import com.bookkeepersmc.notebook.common.world.BiomeRegistry;

@@ -22,7 +22,6 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.compat.rei;
 
 import me.shedaniel.math.Rectangle;

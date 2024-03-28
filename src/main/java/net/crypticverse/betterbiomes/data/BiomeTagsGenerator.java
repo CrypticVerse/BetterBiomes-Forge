@@ -22,7 +22,6 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.data;
 
 import java.util.concurrent.CompletableFuture;
