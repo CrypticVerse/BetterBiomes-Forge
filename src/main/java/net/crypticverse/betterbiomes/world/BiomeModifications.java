@@ -27,12 +27,23 @@ package net.crypticverse.betterbiomes.world;
 import com.bookkeepersmc.notebook.common.world.BiomeRegistry;
 import com.bookkeepersmc.notebook.common.world.SelectBiomes;
 
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.minecraft.core.HolderSet;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
 import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
+import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.world.BiomeModifier;
+import net.minecraftforge.common.world.ForgeBiomeModifiers;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class BiomeModifications {
+    public static final ResourceKey<BiomeModifier> REED = registerKey("add_reed");
     public static void registerGeneration() {
 
         BiomeRegistry.addFeature(SelectBiomes.includeByKey(BetterBiomesBiomes.MAPLE_FOREST, Biomes.FOREST, Biomes.FLOWER_FOREST),
@@ -43,5 +54,17 @@ public class BiomeModifications {
 
         BiomeRegistry.addFeature(SelectBiomes.includeByKey(Biomes.SWAMP, Biomes.MANGROVE_SWAMP),
                 GenerationStep.Decoration.VEGETAL_DECORATION, BetterBiomePlacedFeatures.REED_PLACED_KEY);
+    }
+    public static void bootstrap(BootstapContext<BiomeModifier> context) {
+        var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
+        var biomes = context.lookup(Registries.BIOME);
+        context.register(REED, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SWAMP),
+                HolderSet.direct(placedFeatures.getOrThrow(BetterBiomePlacedFeatures.REED_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+    }
+
+    private static ResourceKey<BiomeModifier> registerKey(String name) {
+        return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS, new ResourceLocation(BetterBiomes.MOD_ID, name));
     }
 }

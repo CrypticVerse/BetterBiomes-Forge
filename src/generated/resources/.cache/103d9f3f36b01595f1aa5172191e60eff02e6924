@@ -1,5 +1,6 @@
-// 1.20.4	2024-03-28T14:19:49.6836677	Registries
+// 1.20.4	2024-03-28T17:09:26.5561792	Registries
 32d8a91a69d6bfce2798f0b9970ddadd790fc62c data/betterbiomes/damage_type/reed.json
+ca90baa4ec52745f94f42ac06db9a09de81089b6 data/betterbiomes/forge/biome_modifier/add_reed.json
 b019f46cc52f10525b05360718efc8e14cd8b05f data/betterbiomes/worldgen/biome/maple_forest.json
 c491a8c7464fac0b47824d5ffb7714aa48336139 data/betterbiomes/worldgen/biome/thin_birch_forest.json
 bb2d919bcecdfdac9165119262cdc01699360d5e data/betterbiomes/worldgen/configured_feature/maple.json

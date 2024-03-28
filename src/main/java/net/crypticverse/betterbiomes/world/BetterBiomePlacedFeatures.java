@@ -42,6 +42,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
+import net.minecraftforge.common.Tags;
 
 public class BetterBiomePlacedFeatures {
     public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
@@ -59,7 +60,7 @@ public class BetterBiomePlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(9, 0.01f,10),(Blocks.BIRCH_SAPLING)));
 
         register(context, REED_PLACED_KEY, configuredFeatures.getOrThrow(BetterBiomeConfiguredFeatures.REED_KEY),
-                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+                List.of(RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 
 
@@ -73,11 +74,5 @@ public class BetterBiomePlacedFeatures {
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
 
-    }
-
-    private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,
-                                                                                          Holder<ConfiguredFeature<?, ?>> configuration,
-                                                                                          PlacementModifier... modifiers) {
-        register(context, key, configuration, List.of(modifiers));
     }
 }

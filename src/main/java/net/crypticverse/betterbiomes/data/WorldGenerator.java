@@ -28,6 +28,7 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 import net.crypticverse.betterbiomes.util.BBDamageTypes;
+import net.crypticverse.betterbiomes.world.BiomeModifications;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -39,12 +40,14 @@ import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.world.BetterBiomeConfiguredFeatures;
 import net.crypticverse.betterbiomes.world.BetterBiomePlacedFeatures;
 import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class WorldGenerator extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, BetterBiomeConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, BetterBiomePlacedFeatures::bootstrap)
             .add(Registries.BIOME, BetterBiomesBiomes::bootstrap)
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, BiomeModifications::bootstrap)
             .add(Registries.DAMAGE_TYPE, BBDamageTypes::bootstrap);
 
     public WorldGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
