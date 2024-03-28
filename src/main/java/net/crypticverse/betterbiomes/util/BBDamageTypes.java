@@ -22,15 +22,15 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.util;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageType;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
 
 public class BBDamageTypes {
     public static final ResourceKey<DamageType> REED = register("reed");

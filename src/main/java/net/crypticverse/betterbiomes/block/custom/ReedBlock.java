@@ -22,10 +22,8 @@
  * SOFTWARE.
  *
  */
-
 package net.crypticverse.betterbiomes.block.custom;
 
-import net.crypticverse.betterbiomes.util.BBDamageTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -35,7 +33,8 @@ import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 
-import java.lang.annotation.ElementType;
+import net.crypticverse.betterbiomes.util.BBDamageTypes;
+
 
 public class ReedBlock extends DoublePlantBlock {
     public ReedBlock(Properties properties) {

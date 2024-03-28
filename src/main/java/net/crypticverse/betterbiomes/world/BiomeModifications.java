@@ -27,7 +27,6 @@ package net.crypticverse.betterbiomes.world;
 import com.bookkeepersmc.notebook.common.world.BiomeRegistry;
 import com.bookkeepersmc.notebook.common.world.SelectBiomes;
 
-import net.crypticverse.betterbiomes.BetterBiomes;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -36,11 +35,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
-import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
 
 public class BiomeModifications {
     public static final ResourceKey<BiomeModifier> REED = registerKey("add_reed");
