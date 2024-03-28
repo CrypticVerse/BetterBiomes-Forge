@@ -57,7 +57,7 @@ import net.crypticverse.betterbiomes.recipe.BetterBiomesRecipes;
 import net.crypticverse.betterbiomes.screen.BetterBiomesMenuTypes;
 import net.crypticverse.betterbiomes.screen.MapleSyrupBoilerScreen;
 import net.crypticverse.betterbiomes.util.BetterBiomeWoodTypes;
-import net.crypticverse.betterbiomes.world.BiomeModificationsExperimental;
+import net.crypticverse.betterbiomes.world.BiomeModifications;
 import net.crypticverse.betterbiomes.world.biome.TerraBlenderAPIPlugin;
 import net.crypticverse.betterbiomes.world.biome.surface.BetterBiomesSurfaceRules;
 
@@ -81,7 +81,7 @@ public class BetterBiomes
         BetterBiomesRecipes.register(modEventBus);
         BetterBiomeEntities.register(modEventBus);
         TerraBlenderAPIPlugin.registerRegions();
-        BiomeModificationsExperimental.registerGeneration();
+        BiomeModifications.registerGeneration();
         BetterBiomeGroup.register(modEventBus);
         BetterBiomeFluidTypes.register(modEventBus);
         BetterBiomeFluids.register(modEventBus);
@@ -122,6 +122,7 @@ public class BetterBiomes
 
             ItemBlockRenderTypes.setRenderLayer(BetterBiomeFluids.SOURCE_MAPLE_SYRUP.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(BetterBiomeFluids.FLOWING_MAPLE_SYRUP.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(BetterBiomeBlocks.REED.get(), RenderType.cutout());
 
             LOGGER.info("Better Biomes Loaded Successfully!");
         }

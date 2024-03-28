@@ -1,4 +1,4 @@
-// 1.20.4	2024-03-21T17:37:29.5201535	Loot Tables
+// 1.20.4	2024-03-28T14:11:19.4232742	Loot Tables
 0fcb8ff2d050851c3378aed5c29d5f12728b04b5 data/betterbiomes/loot_tables/blocks/maple_button.json
 6b8d0a9d4cf77c0b6c8f338516f15fcd9ad48413 data/betterbiomes/loot_tables/blocks/maple_door.json
 b638bc74aee3eb4ee772864f86c47344aa6d2032 data/betterbiomes/loot_tables/blocks/maple_fence.json
@@ -17,6 +17,7 @@ b318119123526b2f1fb146c97dbfbe139abade7c data/betterbiomes/loot_tables/blocks/ma
 a42fe2b8a20e79b8ad826c678eeb0bbe3dc95a7b data/betterbiomes/loot_tables/blocks/maple_wall_hanging_sign.json
 05e582ecd24cb947e65f1682f745867793f1dee8 data/betterbiomes/loot_tables/blocks/maple_wall_sign.json
 6364c13d145ef43ab619845ae644da1b75b83b71 data/betterbiomes/loot_tables/blocks/maple_wood.json
+2d37bda99be453b4729a198d328758854e44ea88 data/betterbiomes/loot_tables/blocks/reed.json
 a6ea0a63bbf5152bb4a8c8d22bd042d83ad516bd data/betterbiomes/loot_tables/blocks/stripped_maple_log.json
 70b83e717c06275f97fd34c94f2cc3e8070d2e7a data/betterbiomes/loot_tables/blocks/stripped_maple_wood.json
 4a1a0caa55820ada62c7e41c77df5e3673e9c7ee data/betterbiomes/loot_tables/blocks/stripped_thin_acacia_log.json

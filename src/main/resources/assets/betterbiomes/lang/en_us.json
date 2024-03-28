@@ -21,7 +21,7 @@
   "block.betterbiomes.maple_hanging_sign": "Maple Hanging Sign",
   "block.betterbiomes.maple_wall_hanging_sign": "Maple Wall Hanging Sign",
   "block.betterbiomes.thin_acacia_log": "Thin Acacia Log",
-  "block.betterbiomes.thin_birch_log": "Thin Spruce Log",
+  "block.betterbiomes.thin_birch_log": "Thin Birch Log",
   "block.betterbiomes.thin_cherry_log": "Thin Cherry Log",
   "block.betterbiomes.thin_dark_oak_log": "Thin Dark Oak Log",
   "block.betterbiomes.thin_jungle_log": "Thin Jungle Log",
@@ -36,6 +36,7 @@
   "block.betterbiomes.stripped_thin_mangrove_log": "Stripped Thin Mangrove Log",
   "block.betterbiomes.stripped_thin_oak_log": "Stripped Thin Oak Log",
   "block.betterbiomes.stripped_thin_spruce_log": "Stripped Thin Spruce Log",
+  "block.betterbiomes.reed": "Reed",
 
 
   "item.betterbiomes.tapped_bucket": "Tapped Bucket",

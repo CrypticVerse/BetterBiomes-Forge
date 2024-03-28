@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#forge:is_dense/overworld",
-  "features": "betterbiomes:maple_placed",
-  "step": "vegetal_decoration"
-}

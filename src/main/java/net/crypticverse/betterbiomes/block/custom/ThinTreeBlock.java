@@ -28,10 +28,12 @@ import com.mojang.serialization.MapCodec;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -66,8 +68,13 @@ public class ThinTreeBlock extends RotatedPillarBlock implements SimpleWaterlogg
     }
 
     @Override
+    public BlockState rotate(BlockState state, Rotation rotation) {
+        return RotatedPillarBlock.rotatePillar(state, rotation);
+    }
+
+    @Override
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos pos, BlockPos pos2) {
-        if ((Boolean) blockState.getValue(WATERLOGGED)) {
+        if (blockState.getValue(WATERLOGGED)) {
             levelAccessor.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(levelAccessor));
         }
         return blockState;
@@ -75,11 +82,16 @@ public class ThinTreeBlock extends RotatedPillarBlock implements SimpleWaterlogg
 
     @Override
     public FluidState getFluidState(BlockState blockState) {
-        return (Boolean) blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
+        return blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(new Property[]{AXIS, WATERLOGGED});
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return this.defaultBlockState().setValue(AXIS, context.getClickedFace().getAxis());
     }
 }

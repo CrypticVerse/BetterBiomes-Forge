@@ -22,20 +22,24 @@
  * SOFTWARE.
  *
  */
-package net.crypticverse.betterbiomes.world;
 
-import com.bookkeepersmc.notebook.common.world.BiomeRegistry;
-import com.bookkeepersmc.notebook.common.world.SelectBiomes;
+package net.crypticverse.betterbiomes.util;
 
-import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.world.level.levelgen.GenerationStep;
+import net.crypticverse.betterbiomes.BetterBiomes;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.damagesource.DamageType;
 
-import net.crypticverse.betterbiomes.world.biome.BetterBiomesBiomes;
+public class BBDamageTypes {
+    public static final ResourceKey<DamageType> REED = register("reed");
 
-public class BiomeModificationsExperimental {
-    public static void registerGeneration() {
+    public static void bootstrap(BootstapContext<DamageType> context) {
+        context.register(BBDamageTypes.REED, new DamageType("betterbiomes.reed", 0.1F));
+    }
 
-        BiomeRegistry.addFeature(SelectBiomes.includeByKey(BetterBiomesBiomes.MAPLE_FOREST, Biomes.BIRCH_FOREST),
-                GenerationStep.Decoration.VEGETAL_DECORATION, BetterBiomePlacedFeatures.THIN_PLACED_KEY);
+    private static ResourceKey<DamageType> register(String name) {
+        return ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(BetterBiomes.MOD_ID, name));
     }
 }

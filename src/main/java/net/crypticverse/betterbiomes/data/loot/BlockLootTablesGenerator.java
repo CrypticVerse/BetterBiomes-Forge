@@ -60,6 +60,8 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
                 createSingleItemTable(BetterBiomeItems.MAPLE_HANGING_SIGN.get()));
         this.add(BetterBiomeBlocks.MAPLE_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(BetterBiomeItems.MAPLE_HANGING_SIGN.get()));
+
+        this.add(BetterBiomeBlocks.REED.get(), block -> createGrassDrops(BetterBiomeBlocks.REED.get()));
         this.dropSelf(BetterBiomeBlocks.MAPLE_STAIRS.get());
         this.dropSelf(BetterBiomeBlocks.MAPLE_BUTTON.get());
         this.dropSelf(BetterBiomeBlocks.MAPLE_PRESSURE_PLATE.get());

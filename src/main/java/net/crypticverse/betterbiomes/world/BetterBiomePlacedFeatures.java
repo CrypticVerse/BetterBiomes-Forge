@@ -36,8 +36,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import net.crypticverse.betterbiomes.BetterBiomes;
 import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
@@ -45,6 +46,7 @@ import net.crypticverse.betterbiomes.block.BetterBiomeBlocks;
 public class BetterBiomePlacedFeatures {
     public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
     public static final ResourceKey<PlacedFeature> THIN_PLACED_KEY = registerKey("thin_placed");
+    public static final ResourceKey<PlacedFeature> REED_PLACED_KEY = registerKey("reed_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -55,6 +57,9 @@ public class BetterBiomePlacedFeatures {
 
         register(context, THIN_PLACED_KEY, configuredFeatures.getOrThrow(BetterBiomeConfiguredFeatures.THIN_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(9, 0.01f,10),(Blocks.BIRCH_SAPLING)));
+
+        register(context, REED_PLACED_KEY, configuredFeatures.getOrThrow(BetterBiomeConfiguredFeatures.REED_KEY),
+                RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
     }
 
 
@@ -68,5 +73,11 @@ public class BetterBiomePlacedFeatures {
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
 
+    }
+
+    private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,
+                                                                                          Holder<ConfiguredFeature<?, ?>> configuration,
+                                                                                          PlacementModifier... modifiers) {
+        register(context, key, configuration, List.of(modifiers));
     }
 }

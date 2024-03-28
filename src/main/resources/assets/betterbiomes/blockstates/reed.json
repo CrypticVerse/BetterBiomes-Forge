@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "betterbiomes:block/reed_bottom"
+    },
+    "half=upper": {
+      "model": "betterbiomes:block/reed_top"
+    }
+  }
+}

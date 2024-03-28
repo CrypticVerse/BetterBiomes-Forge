@@ -79,6 +79,8 @@ public class BetterBiomeBlocks {
     public static final RegistryObject<Block> TAPPED_BUCKET = registerWithoutBlockItem("tapped_bucket_block",
             () -> new TappedBucketBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COCOA).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> REED = registerBlock("reed", () -> new ReedBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)));
+
     public static final RegistryObject<LiquidBlock> MAPLE_SYRUP_BLOCK = BLOCKS.register("maple_syrup_block",
             () -> new LiquidBlock(BetterBiomeFluids.SOURCE_MAPLE_SYRUP, BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable()));
 
